@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/product-detail.css" />
+    <title>Product Detail</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="main-content">
+        <!-- * NAVIGATOR -->
+        <div class="navigator">
+          <div class="navigator__category">
+            <ul class="navigator__categoty--ul">
+              <li class="navigator__categoty--li">
+                <a href="index.html">HOME</a>
+              </li>
+              <li class="navigator__categoty--li"><a href="#">APPAREL</a></li>
+              <li class="navigator__categoty--li"><a href="#">WOMEN</a></li>
+              <li class="navigator__categoty--li">
+                <a href="#">PEEKY CROPED</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigator__previous-page">
+            <p><a href="#">Back to previous page</a></p>
+          </div>
+        </div>
+
+        <!-- * Product Detail 1 -->
+        <div class="item-container1">
+          <div class="item__imgs">
+            <div class="item__main-img">
+              <img src="../img/products/cropped1.jpg" alt="cropped trousers" />
+            </div>
+            <div class="item__img-slider">
+              <img src="../img/products/cropped2.jpg" alt="cropped trousers" />
+              <img src="../img/products/cropped3.jpg" alt="cropped trousers" />
+              <img src="../img/products/cropped4.jpg" alt="cropped trousers" />
+              <img src="../img/products/cropped5.jpg" alt="cropped trousers" />
+              <button class="btn__left--grey"></button>
+              <button class="btn__right--grey"></button>
+            </div>
+          </div>
+
+          <div class="item__cart">
+            <h1>PEEKY CROPPED</h1>
+            <div class="rating">
+              <div id="rating__star">
+                <!-- TODO: add star rating-->
+              </div>
+              <p id="rating__counter">1 Review(s)</p>
+              <p><a href="#">| Add Your Review</a></p>
+            </div>
+            <div class="availability">
+              <p id="availability__price">€578.50</p>
+              <p id="availability__inStock">
+                Availability:
+                <span id="availability__inStock--chk">In stock</span>
+              </p>
+            </div>
+            <div class="spec spec__overview">
+              <h2 class="spec__title">QUICK OVERVIEW:</h2>
+              <p class="spec__info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+                adipisci, repellendus consequatur temporibus accusantium, sed
+                consequuntur architecto, ab fugiat vel mollitia cum illo id
+                quidem! Dolore itaque enim cumque recusandae.
+              </p>
+            </div>
+            <form class="form" action="">
+              <div class="spec spec__size">
+                <h2 class="spec__title">SIZE:</h2>
+                <div class="spec__info">
+                  <div class="spec__option size">25</div>
+                  <div class="spec__option size">26</div>
+                  <div class="spec__option size">27</div>
+                  <div class="spec__option size">28</div>
+                  <div class="spec__option size">29</div>
+                  <div class="spec__option size">30</div>
+                  <div class="spec__option size">31</div>
+                  <div class="spec__option size">32</div>
+                </div>
+              </div>
+              <div class="spec spec__length">
+                <h2 class="spec__title">LENGTH:</h2>
+                <div class="spec__info">
+                  <div class="spec__option length">32</div>
+                  <div class="spec__option length">34</div>
+                </div>
+              </div>
+              <div class="addToCart">
+                <div class="quan">
+                  <h2>QUANTITY:</h2>
+                  <div class="quan__select">
+                    <input type="number" />
+                    <button>+</button>
+                  </div>
+                </div>
+                <div id="addToCartBtn">
+                  <button>ADD TO CART</button>
+                </div>
+                <div class="otherBtns">
+                  <button>+ Add to WishList</button>
+                  <button>+ Add to Compare</button>
+                  <button>+ Email to a friend</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- * Product Detail 2 -->
+        <div class="item-container2">
+          <div class="moreInfo">
+            <input checked="checked" id="tab1" type="radio" name="pct" />
+            <input id="tab2" type="radio" name="pct" />
+            <input id="tab3" type="radio" name="pct" />
+            <input id="tab4" type="radio" name="pct" />
+
+            <nav>
+              <ul>
+                <li class="tab1">
+                  <label for="tab1">PRODUCT DESCRIPTION</label>
+                </li>
+                <li class="tab2">
+                  <label for="tab2">ADDITIONAL INFOMATION</label>
+                </li>
+                <li class="tab3">
+                  <label for="tab3">REVIEWS</label>
+                </li>
+              </ul>
+            </nav>
+
+            <section>
+              <div class="tab1">
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. <br /><br />There
+                  are many variations of passages of Lorem Ipsum available, but
+                  the majority have suffered alteration in some form, by
+                  injected humour, or randomised words which don't look even
+                  slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. - 6.1 oz. 100%
+                  preshrunk heavyweight cotton - Shoulder-to-shoulder taping -
+                  Double-needle sleeves and bottom hem <br /><br />
+                  It uses a dictionary of over 200 Latin words, combined with a
+                  handful of model sentence structures, to generate Lorem Ipsum
+                  which looks reasonable.
+                </p>
+              </div>
+              <div class="tab2">
+                <p>
+                  If you're in between sizes, we recommend sizing up. Great for
+                  low and moderate activity. <br /><br />
+                  Inseam: 28"<br /><br />
+                  58% Recycled Nylon, 42% Elastane Machine wash cold, tumble dry
+                  low<br /><br />
+                  Interior front pocket fits cards and keys Medium coverage<br /><br />
+                  Made in Kandy, Sri Lanka
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perferendis, maiores.
+                </p>
+              </div>
+              <div class="tab3">
+                <p>
+                  <!-- TODO: Add random reviews -->
+                  The trousers are super comfy. I like it!
+                </p>
+                <p>
+                  <!-- TODO: Add random reviews -->
+                </p>
+                <p>
+                  <!-- TODO: Add random reviews -->
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- * PRODUCT RECOMMENDATION -->
+        <div class="suggestion-container">
+          <h2>You May Also Like</h2>
+          <div class="suggestion__slider">
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_snowtops.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">SLEEVE SPRING SUIT</p>
+                <p class="imgCard__info--price">€865.00</p>
+              </div>
+            </div>
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_lights.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">SALTY DAYZ</p>
+                <p class="imgCard__info--price">€770.50</p>
+              </div>
+            </div>
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_lights.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">CHEEKY JANE</p>
+                <p class="imgCard__info--price">€280.50</p>
+              </div>
+            </div>
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_lights.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">ORANGE WAVE</p>
+                <p class="imgCard__info--price">€490.50</p>
+              </div>
+            </div>
+
+            <button class="btn__left--blue" onclick="plusDivs(-1)">
+              &#10094;
+            </button>
+            <button class="btn__right--blue" onclick="plusDivs(1)">
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <!------------ PRODUCT VIEWED ------------->
+        <div class="viewed-container">
+          <h2>Recently Viewed</h2>
+          <div class="viewed__slider">
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_snowtops.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">SYNERGY 2MM BACK ZIP</p>
+                <p class="imgCard__info--price">€765.00</p>
+              </div>
+            </div>
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_lights.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">SYNERGY 2MM</p>
+                <p class="imgCard__info--price">€230.50</p>
+              </div>
+            </div>
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_lights.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">SURF YOKE 19 QS</p>
+                <p class="imgCard__info--price">€330.70</p>
+              </div>
+            </div>
+            <div class="imgCard">
+              <img class="imgCard__img" src="img_lights.jpg" />
+              <div class="imgCard__info">
+                <p class="imgCard__info--name">BRISBANE NX</p>
+                <p class="imgCard__info--price">€190.50</p>
+              </div>
+            </div>
+
+            <button class="btn__left--blue" onclick="plusDivs(-1)">
+              &#10094;
+            </button>
+            <button class="btn__right--blue" onclick="plusDivs(1)">
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- * FOOTER -->
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
