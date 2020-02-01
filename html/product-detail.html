@@ -9,18 +9,22 @@
   </head>
   <body>
     <div class="container">
+      <!-- * SIDE BAR * -->
+      <!-- TODO: Add contents later inside sidebar DIV -->
       <div class="sidebar"></div>
+
+      <!-- * MAIN *  -->
       <div class="main-content">
-        <!-- * NAVIGATOR -->
+        <!-- ** navigator ** -->
         <div class="navigator">
           <div class="navigator__category">
-            <ul class="navigator__categoty--ul">
-              <li class="navigator__categoty--li">
+            <ul class="category__ul">
+              <li class="category__li">
                 <a href="index.html">HOME</a>
               </li>
-              <li class="navigator__categoty--li"><a href="#">APPAREL</a></li>
-              <li class="navigator__categoty--li"><a href="#">WOMEN</a></li>
-              <li class="navigator__categoty--li">
+              <li class="category__li"><a href="#">APPAREL</a></li>
+              <li class="category__li"><a href="#">WOMEN</a></li>
+              <li class="category__li">
                 <a href="#">PEEKY CROPED</a>
               </li>
             </ul>
@@ -30,22 +34,39 @@
           </div>
         </div>
 
-        <!-- * Product Detail 1 -->
+        <!-- ** product detail 1 ** -->
         <div class="item-container1">
+          <!-- *** item imgs *** -->
           <div class="item__imgs">
             <div class="item__main-img">
               <img src="../img/products/cropped1.jpg" alt="cropped trousers" />
             </div>
             <div class="item__img-slider">
-              <img src="../img/products/cropped2.jpg" alt="cropped trousers" />
-              <img src="../img/products/cropped3.jpg" alt="cropped trousers" />
-              <img src="../img/products/cropped4.jpg" alt="cropped trousers" />
-              <img src="../img/products/cropped5.jpg" alt="cropped trousers" />
+              <img
+                class="img-slider__img"
+                src="../img/products/cropped2.jpg"
+                alt="cropped trousers"
+              />
+              <img
+                class="img-slider__img"
+                src="../img/products/cropped3.jpg"
+                alt="cropped trousers"
+              />
+              <img
+                class="img-slider__img"
+                src="../img/products/cropped4.jpg"
+                alt="cropped trousers"
+              />
+              <img
+                class="img-slider__img"
+                src="../img/products/cropped5.jpg"
+                alt="cropped trousers"
+              />
               <button class="btn__left--grey"></button>
               <button class="btn__right--grey"></button>
             </div>
           </div>
-
+          <!-- *** item option *** -->
           <div class="item__cart">
             <h1>PEEKY CROPPED</h1>
             <div class="rating">
@@ -53,7 +74,7 @@
                 <!-- TODO: add star rating-->
               </div>
               <p id="rating__counter">1 Review(s)</p>
-              <p><a href="#">| Add Your Review</a></p>
+              <p id="rating__addReview"><a href="#">| Add Your Review</a></p>
             </div>
             <div class="availability">
               <p id="availability__price">€578.50</p>
@@ -113,14 +134,14 @@
           </div>
         </div>
 
-        <!-- * Product Detail 2 -->
+        <!-- ** product detail 2 ** -->
         <div class="item-container2">
           <div class="moreInfo">
             <input checked="checked" id="tab1" type="radio" name="pct" />
             <input id="tab2" type="radio" name="pct" />
             <input id="tab3" type="radio" name="pct" />
             <input id="tab4" type="radio" name="pct" />
-
+            <!-- *** product detail tabs *** -->
             <nav>
               <ul>
                 <li class="tab1">
