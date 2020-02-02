@@ -1,0 +1,26 @@
+//Mixins
+@mixin spec {
+  .spec__title {
+    font-size: $subTitle;
+    font-weight: bold;
+  }
+
+  .spec__info {
+    font-size: $normalText;
+  }
+}
+
+@mixin wrapper {
+  width: 80%;
+  height: auto;
+}
+
+@mixin slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .imgCard {
+    display: grid;
+    grid-template-rows: 80% 20%;
+  }
+}

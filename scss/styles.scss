@@ -1,0 +1,92 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+
+body {
+  background-color: $bodyColor;
+  font-family: Roboto, Railway;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "sidebar main main"
+    "footer footer footer";
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  @include wrapper;
+}
+
+header {
+  grid-area: head;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.item {
+  display: grid;
+  grid-template-areas:
+    "img cart"
+    "info info";
+}
+
+.item__imgs {
+  grid-area: img;
+}
+
+.item__cart {
+  grid-area: cart;
+}
+
+.item__moreInfo {
+  grid-area: info;
+}
+
+.suggestion__slider {
+  @include slider;
+}
+
+.viewed__slider {
+  @include slider;
+}
+
+footer {
+  grid-area: footer;
+}
+
+//NAV BAR
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav__category {
+  ul {
+    width: 100%;
+  }
+
+  li {}
+
+  a {
+    text-decoration: none;
+    font-size: $normalText;
+    color: $greyText;
+    display: block;
+    text-align: center;
+  }
+}

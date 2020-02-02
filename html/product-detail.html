@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../css/product-detail.css" />
-    <title>Product Detail</title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- * SIDE BAR * -->
-      <!-- TODO: Add contents later inside sidebar DIV -->
-      <div class="sidebar"></div>
 
-      <!-- * MAIN *  -->
-      <div class="main-content">
-        <!-- ** navigator ** -->
-        <div class="navigator">
-          <div class="navigator__category">
-            <ul class="category__ul">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Font: Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+    rel="stylesheet">
+  <!-- Font: Railway -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/product-detail.css" />
+  <title>Product Detail</title>
+</head>
+
+<body>
+  <div class="container">
+    <!------------ HEADER ------------>
+    <header>
+      <!-- TODO: Add header contents -->
+      HEADER
+    </header>
+    <!------------ SIDE BAR ------------>
+    <!-- TODO: Add contents later inside sidebar DIV -->
+    <div class="sidebar">
+      <div class="wrapper">
+        SIDEBAR
+      </div>
+    </div>
+
+    <!------------ MAIN ------------>
+    <div class="main-content">
+      <div class="wrapper">
+        <nav class="nav">
+          <div class="wrapper">
+            <ul class="nav__category">
               <li class="category__li">
                 <a href="index.html">HOME</a>
               </li>
@@ -28,40 +46,23 @@
                 <a href="#">PEEKY CROPED</a>
               </li>
             </ul>
+            <div class="nav__previous">
+              <p><a href="#">Back to previous page</a></p>
+            </div>
           </div>
-          <div class="navigator__previous-page">
-            <p><a href="#">Back to previous page</a></p>
-          </div>
-        </div>
+        </nav>
 
-        <!-- ** product detail 1 ** -->
-        <div class="item-container1">
-          <!-- *** item imgs *** -->
+        <!-- Main: 2. Item container1 -->
+        <section class="item">
           <div class="item__imgs">
             <div class="item__main-img">
-              <img src="../img/products/cropped1.jpg" alt="cropped trousers" />
+              <img src="https://via.placeholder.com/370" alt="cropped trousers" />
             </div>
             <div class="item__img-slider">
-              <img
-                class="img-slider__img"
-                src="../img/products/cropped2.jpg"
-                alt="cropped trousers"
-              />
-              <img
-                class="img-slider__img"
-                src="../img/products/cropped3.jpg"
-                alt="cropped trousers"
-              />
-              <img
-                class="img-slider__img"
-                src="../img/products/cropped4.jpg"
-                alt="cropped trousers"
-              />
-              <img
-                class="img-slider__img"
-                src="../img/products/cropped5.jpg"
-                alt="cropped trousers"
-              />
+              <img class="img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
+              <img class="img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
+              <img class="img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
+              <img class="img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
               <button class="btn__left--grey"></button>
               <button class="btn__right--grey"></button>
             </div>
@@ -132,11 +133,8 @@
               </div>
             </form>
           </div>
-        </div>
 
-        <!-- ** product detail 2 ** -->
-        <div class="item-container2">
-          <div class="moreInfo">
+          <div class="item__moreInfo">
             <input checked="checked" id="tab1" type="radio" name="pct" />
             <input id="tab2" type="radio" name="pct" />
             <input id="tab3" type="radio" name="pct" />
@@ -207,41 +205,42 @@
               </div>
             </section>
           </div>
-        </div>
+        </section>
 
-        <!-- * PRODUCT RECOMMENDATION -->
-        <div class="suggestion-container">
-          <h2>You May Also Like</h2>
-          <div class="suggestion__slider">
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_snowtops.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">SLEEVE SPRING SUIT</p>
-                <p class="imgCard__info--price">€865.00</p>
+        <!-- Main: 3. suggestion -->
+        <section class="suggestion">
+          <div class="wrapper">
+            <h2>You May Also Like</h2>
+            <div class="suggestion__slider">
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">SLEEVE SPRING SUIT</p>
+                  <p class="imgCard__info--price">€865.00</p>
+                </div>
+              </div>
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">SALTY DAYZ</p>
+                  <p class="imgCard__info--price">€770.50</p>
+                </div>
+              </div>
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">CHEEKY JANE</p>
+                  <p class="imgCard__info--price">€280.50</p>
+                </div>
+              </div>
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">ORANGE WAVE</p>
+                  <p class="imgCard__info--price">€490.50</p>
+                </div>
               </div>
             </div>
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_lights.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">SALTY DAYZ</p>
-                <p class="imgCard__info--price">€770.50</p>
-              </div>
-            </div>
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_lights.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">CHEEKY JANE</p>
-                <p class="imgCard__info--price">€280.50</p>
-              </div>
-            </div>
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_lights.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">ORANGE WAVE</p>
-                <p class="imgCard__info--price">€490.50</p>
-              </div>
-            </div>
-
             <button class="btn__left--blue" onclick="plusDivs(-1)">
               &#10094;
             </button>
@@ -249,41 +248,43 @@
               &#10095;
             </button>
           </div>
-        </div>
 
-        <!------------ PRODUCT VIEWED ------------->
-        <div class="viewed-container">
-          <h2>Recently Viewed</h2>
-          <div class="viewed__slider">
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_snowtops.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">SYNERGY 2MM BACK ZIP</p>
-                <p class="imgCard__info--price">€765.00</p>
-              </div>
-            </div>
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_lights.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">SYNERGY 2MM</p>
-                <p class="imgCard__info--price">€230.50</p>
-              </div>
-            </div>
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_lights.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">SURF YOKE 19 QS</p>
-                <p class="imgCard__info--price">€330.70</p>
-              </div>
-            </div>
-            <div class="imgCard">
-              <img class="imgCard__img" src="img_lights.jpg" />
-              <div class="imgCard__info">
-                <p class="imgCard__info--name">BRISBANE NX</p>
-                <p class="imgCard__info--price">€190.50</p>
-              </div>
-            </div>
+        </section>
 
+        <!--Main 4. viewed-->
+        <section class="viewed">
+          <div class="wrapper">
+            <h2>Recently Viewed</h2>
+            <div class="viewed__slider">
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">SYNERGY 2MM BACK ZIP</p>
+                  <p class="imgCard__info--price">€765.00</p>
+                </div>
+              </div>
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235">
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">SYNERGY 2MM</p>
+                  <p class="imgCard__info--price">€230.50</p>
+                </div>
+              </div>
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235">
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">SURF YOKE 19 QS</p>
+                  <p class="imgCard__info--price">€330.70</p>
+                </div>
+              </div>
+              <div class="imgCard">
+                <img class="imgCard__img" src="https://via.placeholder.com/250x235">
+                <div class="imgCard__info">
+                  <p class="imgCard__info--name">BRISBANE NX</p>
+                  <p class="imgCard__info--price">€190.50</p>
+                </div>
+              </div>
+            </div>
             <button class="btn__left--blue" onclick="plusDivs(-1)">
               &#10094;
             </button>
@@ -291,11 +292,15 @@
               &#10095;
             </button>
           </div>
-        </div>
+        </section>
       </div>
-
-      <!-- * FOOTER -->
-      <div class="footer"></div>
     </div>
-  </body>
+
+    <!------------ FOOTER ------------>
+    <footer class="footer">
+      FOOTER
+    </footer>
+  </div>
+</body>
+
 </html>
