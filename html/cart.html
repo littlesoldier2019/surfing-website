@@ -38,6 +38,7 @@
         <div class="cart__content">
             <div class="cart__content--left table">
                 <div class="table__titles">
+                    <div class="table__title"></div>
                     <div class="table__title">Product Name</div>
                     <div class="table__title">Unit Price</div>
                     <div class="table__title">QTY</div>
@@ -51,14 +52,29 @@
                             Accusamus amet, culpa dolorem enim eum fuga magni possimus quas tenetur voluptatem?
                         </div>
                         <div class="desc__icons">
-
+                            <div class="desc__icon">
+                                <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png">
+                            </div>
+                            <div class="desc__icon">
+                                <img src="https://img.icons8.com/material-sharp/24/000000/twitter-squared.png">
+                            </div>
+                            <div class="desc__icon">
+                                <img src="https://img.icons8.com/ios/50/000000/pinterest.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="table__price">749,50</div>
-                    <div class="table__amount">
-                        <input type="number" placeholder="1">
+                    <div class="table__price">
+                        <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                        <div class="table__price--number">749,50</div>
                     </div>
-                    <div class="table__total">749,50</div>
+                    <div class="table__amount">
+                        <input class="table__input" type="number" placeholder="1">
+                    </div>
+                    <div class="table__total table__price">
+                        <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                        <div class="table__price--number">749,50</div>
+                        <div class="table__price--close">X</div>
+                    </div>
                 </div>
                 <div class="table__product">
                     <div class="table__product--image"></div>
@@ -68,28 +84,46 @@
                             Accusamus amet, culpa dolorem enim eum fuga magni possimus quas tenetur voluptatem?
                         </div>
                         <div class="desc__icons">
-
+                            <div class="desc__icon">
+                                <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png">
+                            </div>
+                            <div class="desc__icon">
+                                <img src="https://img.icons8.com/material-sharp/24/000000/twitter-squared.png">
+                            </div>
+                            <div class="desc__icon">
+                                <img src="https://img.icons8.com/ios/50/000000/pinterest.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="table__price">749,50</div>
-                    <div class="table__amount">
-                        <input type="number" placeholder="1">
+                    <div class="table__price">
+                        <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                        <div class="table__price--number">749,50</div>
                     </div>
-                    <div class="table__total">749,50</div>
+                    <div class="table__amount">
+                        <input class="table__input" type="number" placeholder="1">
+                    </div>
+                    <div class="table__total table__price">
+                        <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                        <div class="table__price--number">749,50</div>
+                        <div class="table__price--close">X</div>
+                    </div>
                 </div>
                 <div class="table__last">
                     <div class="table__last--left">
                         <div class="table__last--coupon">Have you got a coupon code?</div>
-                        <input type="text" placeholder="Insert Code">
+                        <input class="table__last--input" type="text" placeholder="Insert Code">
                     </div>
                     <div class="table__last--right">
-                        <div class="table__last-update">
-                            <button class="table__btn-update">Update shopping cart</button>
+                        <div class="table__last-action">
+                            <button class="table__btn-update">Update shopping cart</button
+                        </div>
+                        <div class="table__last-link">
                             <a href="#" class="table__last--continue">or continue shopping</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
             <div class="cart__content--right total">
                 <div class="total__title">Review Your Cart</div>
                 <div class="total__row">
@@ -106,7 +140,7 @@
                 </div>
                 <div class="total__row">
                     <div class="total__subtitle total__bold">Order total</div>
-                    <div class="total__numbers">1511,70</div>
+                    <div class="total__numbers total__bold">1511,70</div>
                 </div>
                 <div class="total__action">
                     <button class="total__btn">Checkout</button>
