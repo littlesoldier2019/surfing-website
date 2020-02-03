@@ -14,7 +14,7 @@ body {
 
 .container {
   background-color: #F8F8F8;
-  width: 94rem; }
+  max-width: 94rem; }
 
 .page__breadcrumbs {
   display: flex;
@@ -176,3 +176,58 @@ body {
   padding: 1rem 3rem;
   border: none;
   margin-bottom: .5rem; }
+
+.checkout__row-first {
+  display: flex;
+  justify-content: space-between; }
+
+.checkout__row--item {
+  display: flex;
+  flex-direction: column;
+  width: 32%; }
+
+.checkout__row__main-title {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem; }
+
+.checkout__row__bold-title {
+  font-weight: bold;
+  font-size: 2.4rem; }
+
+.row-guest {
+  padding: 0 2rem; }
+  .row-guest__about-info {
+    color: #333333; }
+  .row-guest__bold {
+    font-weight: 500; }
+  .row-guest__checkbox-container {
+    padding-top: 2rem;
+    border-top: 1px solid #efefef; }
+  .row-guest__checkbox-group {
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem; }
+  .row-guest__list--title {
+    color: #333333;
+    font-weight: 500; }
+  .row-guest__list--subtitle {
+    color: #808080;
+    font-weight: 500; }
+  .row-guest__main-list {
+    padding: 2rem 2rem 0 2rem;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 2rem; }
+  .row-guest__btn {
+    display: inline-block;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    border: none; }

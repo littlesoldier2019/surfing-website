@@ -155,16 +155,19 @@
                             <div class="checkout__row__bold-title">Guest!</div>
                         </div>
                         <div class="row-guest__about-info">
-                            Register with us for future convenience: You can save your data in order to speed up your next shopping experience
+                            Register with us for future convenience: </div>
+                        <div class="row-guest__about-info row-guest__bold">
+                            You can save your data in order to speed up your next shopping experience
                         </div>
+
                         <div class="row-guest__checkbox-container">
                             <div class="row-guest__checkbox-group">
-                                <label for="checkout1" class="row-guest__checkbox-label"></label>
                                 <input type="checkbox" class="row-guest__checkout" id="checkout1">
+                                <label for="checkout1" class="row-guest__checkbox-label">Checkout as a guest</label>
                             </div>
                             <div class="row-guest__checkbox-group">
-                                <label for="register1" class="row-guest__checkbox-label"></label>
                                 <input type="checkbox" class="row-guest__register" id="register1">
+                                <label for="register1" class="row-guest__checkbox-label">Register</label>
                             </div>
                         </div>
                         <div class="row-guest__list">
@@ -185,9 +188,23 @@
                             Are you a
                             <div class="checkout__row__bold-title">Member?</div>
                         </div>
-                        <div class="row-member__title">Already registered</div>
-                        <div class="row-member__subtitle">Please log in below:</div>
-                        <div class="row-member__group"></div>
+                        <div class="row-member__title row-guest__list--title">Already registered?</div>
+                        <div class="row-member__subtitle row-guest__list--subtitle">Please log in below:</div>
+                        <div class="row-member__group">
+                            <label class="row-member__label">Email Address <span class="row-member__red">*</span></label>
+                            <input type="text" class="row-member__input" required>
+                        </div>
+                        <div class="row-member__group">
+                            <label class="row-member__label">Password<span class="row-member__red">*</span></label>
+                            <input type="password" class="row-member__input" required>
+                        </div>
+                        <div class="row-member__password">
+                            <div class="row-member__required">*Required fields</div>
+                            <div class="row-member__passnumber">Forgot your password?</div>
+                        </div>
+                        <div class="row-member__action">
+                            <button class="row-member__btn row-guest__btn">Login</button>
+                        </div>
                     </div>
                     <div class="checkout__row--item total">
                         <div class="total__title">Review Your Cart</div>
