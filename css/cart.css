@@ -179,7 +179,9 @@ body {
 
 .checkout__row-first {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #efefef; }
 
 .checkout__row--item {
   display: flex;
@@ -230,4 +232,43 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     outline: none;
-    border: none; }
+    border: none;
+    width: 100%; }
+
+.row-member__group {
+  margin-top: 2rem; }
+
+.row-member__label {
+  color: #333333;
+  font-weight: 500; }
+
+.row-member__input {
+  display: block;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #efefef;
+  font-family: inherit;
+  padding: 1rem;
+  width: 100%; }
+
+.row-member__red {
+  color: red; }
+
+.row-member__password {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; }
+
+.row-member__required {
+  color: red; }
+
+.row-member__passnumber {
+  color: #333333; }
+  .row-member__passnumber:hover {
+    text-decoration: none; }
+
+.row-member__action {
+  margin-top: 4rem; }
+
+.row-member__btn {
+  width: 100%; }

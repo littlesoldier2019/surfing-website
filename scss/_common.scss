@@ -230,6 +230,8 @@ body {
     &-first {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #efefef;
     }
     &--item {
       display: flex;
@@ -294,6 +296,49 @@ body {
     font-weight: bold;
     outline: none;
     border: none;
+    width: 100%;
   }
 
+}
+
+.row-member {
+  &__group {
+    margin-top: 2rem;
+  }
+  &__label {
+    color: $dark-grey-color;
+    font-weight: 500;
+  }
+  &__input {
+    display: block;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #efefef;
+    font-family: inherit;
+    padding: 1rem;
+    width: 100%;
+  }
+  &__red {
+    color: red;
+  }
+  &__password {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  &__required {
+    color: red;
+  }
+  &__passnumber {
+    color: $dark-grey-color;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__action {
+    margin-top: 4rem;
+  }
+  &__btn {
+    width: 100%;
+  }
 }
