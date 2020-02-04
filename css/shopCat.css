@@ -19,13 +19,13 @@
 .grid__display {
     display: flex;
     flex-wrap: wrap;
+    margin: 10px auto;
 }
 
 .display__block {
     display: flex;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    /* width: 200px; */
     margin: 10px;
     text-align: center;
     align-items: center;
