@@ -239,39 +239,38 @@
                                 <div class="delivery-form__first">
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Email*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="e.g name@email.com" required>
+                                        <input type="text" class="delivery-form__input" placeholder="e.g name@email.com" required>
                                     </div>
                                     <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Full Name*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="firstname" required>
-                                        <input type="text" class="deliver-form__input" placeholder="lastname" required>
+                                        <label class="delivery-form__label">First Name*</label>
+                                        <input type="text" class="delivery-form__input" placeholder="firstname" required>
+                                    </div>
+                                    <div class="delivery-form__form-group">
+                                        <label class="delivery-form__label">Last Name*</label>
+                                        <input type="text" class="delivery-form__input" placeholder="lastname" required>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Company</label>
-                                        <input type="text" class="deliver-form__input" placeholder="e.g your company(optional)">
+                                        <input type="text" class="delivery-form__input" placeholder="e.g your company(optional)">
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Address*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="Address line 1" required>
-                                        <input type="text" class="deliver-form__input" placeholder="Address line 2" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input">
-                                        <label class="delivery-form__label">Billing address the same as shipping</label>
+                                        <input type="text" class="delivery-form__input" placeholder="Address line 1" required>
+                                        <input type="text" class="delivery-form__input" placeholder="Address line 2" required>
                                     </div>
                                 </div>
-                                <div class="deliver-form__second">
+                                <div class="delivery-form__second">
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Postal Code*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="e.g 201000" required>
+                                        <input type="text" class="delivery-form__input" placeholder="e.g 201000" required>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Town/City*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="e.g Los Angeles" required>
+                                        <input type="text" class="delivery-form__input" placeholder="e.g Los Angeles" required>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label" for="state-select">Country*</label>
-                                        <select name="state-select" id="state-select" class="deliver-form__select">
+                                        <select name="state-select" id="state-select" class="delivery-form__select">
                                             <option value="Finland" class="delivery-form__option">Finland</option>
                                             <option value="Sweden" class="delivery-form__option">Sweden</option>
                                             <option value="Denmark" class="delivery-form__option">Denmark</option>
@@ -281,67 +280,78 @@
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Mobile*</label>
-                                        <input type="number" class="deliver-form__input" placeholder="+39" required>
-                                        <input type="number" class="deliver-form__input" placeholder="phone" required>
-
+                                        <div class="delivery-form__phone-group">
+                                            <input type="number" class="delivery-form__input delivery-form__code-phone" placeholder="+39" required>
+                                            <input type="number" class="delivery-form__input" placeholder="phone" required>
+                                        </div>
                                     </div>
-                                    <div class="delivery-form__form-group">
-                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input">
-                                        <label class="delivery-form__label">Remember this address next time</label>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-form__checkboxes">
+                                <div class="delivery-form__form-group checkbox__group">
+                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                    <label class="delivery-form__label checkbox__label">Billing address the same as shipping</label>
+                                </div>
+                                <div class="delivery-form__form-group checkbox__group">
+                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                    <label class="delivery-form__label checkbox__label">Remember this address next time</label>
                                 </div>
                             </div>
                             <div class="delivery-form__text">By clicking "Place my order", you agree to our Terms of Use and privacy Policy, including the transfer of your personal information to Italy, a jurisdiction that may not provide an equivalent level of data protection to the laws in your home country</div>
                         </div>
-                        <div class="shipment-form__right payment-details">
+                        <div class="delivery-form__right payment-details">
                             <div class="delivery-form__title">Your payment details</div>
-                            <div class="delivery-form__container">
+                            <div class="delivery-form__container payment__container">
                                 <div class="delivery-form__first">
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Email*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="e.g name@email.com" required>
+                                        <input type="text" class="delivery-form__input" placeholder="e.g name@email.com" required>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Full Name*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="firstname" required>
-                                        <input type="text" class="deliver-form__input" placeholder="lastname" required>
+                                        <input type="text" class="delivery-form__input" placeholder="firstname" required>
+                                        <input type="text" class="delivery-form__input" placeholder="lastname" required>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Company</label>
-                                        <input type="text" class="deliver-form__input" placeholder="e.g your company(optional)">
+                                        <input type="text" class="delivery-form__input" placeholder="e.g your company(optional)">
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Address*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="Address line 1" required>
-                                        <input type="text" class="deliver-form__input" placeholder="Address line 2" required>
+                                        <input type="text" class="delivery-form__input" placeholder="Address line 1" required>
+                                        <input type="text" class="delivery-form__input" placeholder="Address line 2" required>
                                     </div>
-                                    <div class="delivery-form__form-group">
-                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input">
-                                        <label class="delivery-form__label">Billing address the same as shipping</label>
-                                    </div>
+
                                 </div>
                                 <div class="deliver-form__second">
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Credit Card Number*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="type your credit card number" required>
+                                        <input type="text" class="delivery-form__input" placeholder="type your credit card number" required>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Expiration Date*</label>
-                                        <input type="date" class="deliver-form__input" required>
+                                        <input type="date" class="delivery-form__input" required>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Secure Code(CCV)*</label>
-                                        <input type="text" class="deliver-form__input" placeholder="000" required>
+                                        <input type="text" class="delivery-form__input" placeholder="000" required>
                                         <span class="delivery-form__tip">What is this?</span>
                                     </div>
                                     <div class="delivery-form__form-group">
                                         <label class="delivery-form__label">Name on Card</label>
-                                        <input type="text" class="deliver-form__input" placeholder="name on card" required>
+                                        <input type="text" class="delivery-form__input" placeholder="name on card" required>
                                     </div>
-                                    <div class="delivery-form__form-group">
-                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input">
-                                        <label class="delivery-form__label">Remember this card info next time</label>
-                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="delivery-form__checkboxes">
+                                <div class="delivery-form__form-group checkbox__group">
+                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                    <label class="delivery-form__label checkbox__label">Billing address the same as shipping</label>
+                                </div>
+                                <div class="delivery-form__form-group checkbox__group">
+                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                    <label class="delivery-form__label checkbox__label">Remember this card info next time</label>
                                 </div>
                             </div>
                             <div class="delivery-form__action">
@@ -352,7 +362,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 

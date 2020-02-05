@@ -63,12 +63,12 @@ body {
     }
   }
   &--number {
-    border: 1px solid #aeaeae;
+    @include border(#aeaeae);
     border-radius: 50%;
     padding: 1rem 1.5rem;
     margin-right: 1rem;
     &:hover {
-      border: 1px solid #ff0101;
+      @include border(#ff0101);
     }
   }
   &--text {
@@ -136,7 +136,7 @@ body {
     &--input {
       display: block;
       background-color: #fff;
-      border: 1px solid #d1d1d1;
+      @include border(#d1d1d1);
       padding: 1rem .5rem;
       width: 100%;
     }
@@ -313,7 +313,7 @@ body {
     display: block;
     background-color: #fff;
     outline: none;
-    border: 1px solid #efefef;
+    @include border(#efefef);
     font-family: inherit;
     padding: 1rem;
     width: 100%;
@@ -341,4 +341,128 @@ body {
   &__btn {
     width: 100%;
   }
+}
+
+.delivery-form {
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    padding: 2rem;
+    width: 53%;
+  }
+  &__right {
+    width: 45%;
+    padding: 2rem;
+  }
+  &__first {
+    width: 50%;
+  }
+  &__second {
+    width: 45%;
+  }
+  &__title {
+    color: $dark-grey-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-group {
+    margin-bottom: 1.5rem;
+  }
+  &__label {
+    display: block;
+    text-transform: uppercase;
+    color: $dark-grey-color;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  &__input {
+    display: block;
+    @include border(#efefef);
+    background-color: #ffffff;
+    padding: 1rem .5rem;
+    font-family: inherit;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  &__select {
+    display: block;
+    @include border(#efefef);
+    width: 100%;
+    padding: .9rem .5rem;
+    font-family: inherit;
+    background-color: #fff;
+  }
+  &__phone-group {
+    display: flex;
+
+  }
+  &__code-phone {
+    width: 30%;
+  }
+  &__checkbox {
+    width: 30%;
+  }
+
+  &__btn {
+    display: inline-block;
+    outline: none;
+    background-color: $dark-grey-color;
+    color: #ffffff;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border: none;
+    padding: 1rem 0;
+    width: 100%;
+  }
+}
+
+.checkbox {
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {
+    width: 4%;
+  }
+  &__label {
+    width: 93%;
+  }
+}
+
+.payment__container {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 850px) {
+  .cart__titles {
+    padding: 0 1rem 0 1rem;
+  }
+  .cart__title--number {
+    padding: 3px 8px;
+  }
+  .cart__title--text {
+    font-size: 2rem;
+  }
+  .table {
+    width: 100%;
+  }
+  .checkout__row-first {
+    flex-wrap: wrap;
+  }
+  .total {
+    overflow: hidden;
+    padding: 2rem 1.5rem 3rem;
+    width: 100%;
+  }
+  .cart__content {
+    flex-wrap: wrap;
+  }
+
 }

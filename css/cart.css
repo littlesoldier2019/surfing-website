@@ -272,3 +272,97 @@ body {
 
 .row-member__btn {
   width: 100%; }
+
+.delivery-form {
+  display: flex;
+  justify-content: space-between; }
+  .delivery-form__left {
+    padding: 2rem;
+    width: 53%; }
+  .delivery-form__right {
+    width: 45%;
+    padding: 2rem; }
+  .delivery-form__first {
+    width: 50%; }
+  .delivery-form__second {
+    width: 45%; }
+  .delivery-form__title {
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 2rem; }
+  .delivery-form__container {
+    display: flex;
+    justify-content: space-between; }
+  .delivery-form__form-group {
+    margin-bottom: 1.5rem; }
+  .delivery-form__label {
+    display: block;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 500; }
+  .delivery-form__input {
+    display: block;
+    border: 1px solid #efefef;
+    background-color: #ffffff;
+    padding: 1rem .5rem;
+    font-family: inherit;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .delivery-form__select {
+    display: block;
+    border: 1px solid #efefef;
+    width: 100%;
+    padding: .9rem .5rem;
+    font-family: inherit;
+    background-color: #fff; }
+  .delivery-form__phone-group {
+    display: flex; }
+  .delivery-form__code-phone {
+    width: 30%; }
+  .delivery-form__checkbox {
+    width: 30%; }
+  .delivery-form__btn {
+    display: inline-block;
+    outline: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border: none;
+    padding: 1rem 0;
+    width: 100%; }
+
+.checkbox__group {
+  display: flex;
+  justify-content: space-between; }
+
+.checkbox__input {
+  width: 4%; }
+
+.checkbox__label {
+  width: 93%; }
+
+.payment__container {
+  margin-bottom: 2rem; }
+
+@media (max-width: 850px) {
+  .cart__titles {
+    padding: 0 1rem 0 1rem; }
+  .cart__title--number {
+    padding: 3px 8px; }
+  .cart__title--text {
+    font-size: 2rem; }
+  .table {
+    width: 100%; }
+  .checkout__row-first {
+    flex-wrap: wrap; }
+  .total {
+    overflow: hidden;
+    padding: 2rem 1.5rem 3rem;
+    width: 100%; }
+  .cart__content {
+    flex-wrap: wrap; } }
