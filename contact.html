@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <script src="js\contact.js"></script>
+    <script src="https://kit.fontawesome.com/3146a6b7a3.js" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQYJ0r3QuzcsseEp2V4Mp7_fZsCExgJJ8&callback=initMap">
+    </script>
+    <script src="js\contact.js"></script>
+  </head>
+  <body>
+    <div class="hero" id="map">
+        <div class="hero__logo">
+          <img src="img\surfhouse_logo.png" alt="logo">
+        </div> 
+        <div class="hero__social-icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-instagram"></i>
+          <div class="language__container">
+            <select name="language" id="language">
+              <option value="english">EN</option>
+              <option value="finnish">FI</option>
+            </select>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+        </div>
+        <div class="main__container">
+          <div class="navigation">
+            <div>
+              <p>Home</p>
+              <img src="img\arrows\double-arrow-right.svg" alt="forward arrow">
+              <p>Contact Us</p>
+            </div>
+            <div>
+              <img src="img\arrows\double-arrow-left.svg" alt="backward arrow">
+              <p>Back to previous page</p>
+            </div>
+         </div>
+          <div class="main__body">
+            <div class="contact-form">
+              <form>
+                <div>
+                  <label for="full-name">full name</label>
+                  <input type="text" id="full-name" name="full-name" placeholder="e.g. Robert Smith" required>
+                </div>
+                <div>
+                  <label for="email">email</label>
+                  <input type="email" id="email" name="email" placeholder="e.g. name@home.com" required>
+                </div>
+                <div>
+                  <label for="company">company</label>
+                  <input type="text" id="company" name="company" placeholder="e.g. your company (optional)">
+                </div>
+                <div>
+                  <label for="subject">subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="e.g. info" required>
+                </div>
+                <div>
+                  <label for="message">message</label>
+                  <textarea name="message" rows="10" cols="30"></textarea>
+                </div>
+                <div>
+                  <button id="contact-form">submit</button>
+                </div>          
+              </form>
+            </div>
+            <div class="contact-detail">
+                <div>
+                  <h4>Address</h4>
+                </div>
+                <div>
+                  <img src="img\social icon\pin.svg" alt="location">
+                  <p>Ut interdum tristique est com modo pharetra.</p>
+                </div>
+                <div>
+                  Lorem ipsum is simply dummy text of the printing and over
+                </div>
+                <div>
+                  <img src="img\social icon\phone.svg" alt="phone">
+                  <p class="contact-num">1-900-324-9876</p>
+                </div>
+                <div>
+                  <img src="img\social icon\mail.svg" alt="email">
+                  <p class="contact-email">info@surfhouse.com</p>
+                </div>
+                <div>
+                  <p class="contact-request">If you have questions about your order or need any general information our customer survice team will be happly to assist you.</p>
+                </div>
+            </div>
+          </div>
+        <div class="brand">                      
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
