@@ -2,6 +2,7 @@
   border: 2px solid orange;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
 
 .nav__category {
@@ -43,13 +44,17 @@
 .item {
   border: 2px solid grey;
   display: grid;
-  grid-template-areas: "img cart" "info info";
+  grid-template-areas: "img cart";
+  align-items: center;
+  align-content: start;
+  justify-items: center;
 }
 .item__imgs {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img;
   display: grid;
+  margin-right: 1.5rem;
 }
 .item__cart {
   -ms-grid-row: 1;
@@ -58,6 +63,11 @@
   grid-area: cart;
   display: flex;
   flex-direction: column;
+}
+
+.item__main-img,
+.item__img-slider {
+  border: 2px solid salmon;
 }
 
 .title {
@@ -147,6 +157,7 @@
 .addToCart {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  align-items: center;
 }
 .addToCart .quan,
 .addToCart .addToCartBtn,
@@ -154,8 +165,19 @@
   border: 1px solid turquoise;
   margin-left: 0.5rem;
 }
+.addToCart .quan {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+  align-items: stretch;
+}
+.addToCart .quan__title {
+  margin: 0;
+}
 .addToCart .quan__input {
   width: 2rem;
+  margin-left: 1rem;
 }
 .addToCart .quan__input::-webkit-inner-spin-button, .addToCart .quan__input::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -167,7 +189,7 @@
   display: inline-block;
 }
 .addToCart .btn--orange {
-  padding: 1rem;
+  padding: 1rem 0.7rem;
   background-color: #f5672f;
   color: white;
   font-size: 18px;
@@ -183,10 +205,47 @@
 }
 
 .item__moreInfo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: info;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.moreInfo__tabs {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.tab {
+  border: 1px solid blueviolet;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+.tab:hover {
+  background-color: #ACEBFA;
+}
+
+.tab.active {
+  background-color: #21D3FC;
+}
+
+.tab__content {
+  width: 100%;
+  height: 100%;
+  color: #999999;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+  border: 1px solid #ddd;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 body {

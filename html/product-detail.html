@@ -139,80 +139,71 @@
                 </div>
               </form>
             </div>
-
-            <div class="item__moreInfo">
-              <input checked="checked" id="tab1" type="radio" name="pct" />
-              <input id="tab2" type="radio" name="pct" />
-              <input id="tab3" type="radio" name="pct" />
-              <input id="tab4" type="radio" name="pct" />
-              <!-- *** product detail tabs *** -->
-              <nav>
-                <ul>
-                  <li class="tab1">
-                    <label for="tab1">PRODUCT DESCRIPTION</label>
-                  </li>
-                  <li class="tab2">
-                    <label for="tab2">ADDITIONAL INFOMATION</label>
-                  </li>
-                  <li class="tab3">
-                    <label for="tab3">REVIEWS</label>
-                  </li>
-                </ul>
-              </nav>
-
-              <section>
-                <div class="tab1">
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't look
-                    even slightly believable. If you are going to use a passage of
-                    Lorem Ipsum, you need to be sure there isn't anything
-                    embarrassing hidden in the middle of text. <br /><br />There
-                    are many variations of passages of Lorem Ipsum available, but
-                    the majority have suffered alteration in some form, by
-                    injected humour, or randomised words which don't look even
-                    slightly believable. If you are going to use a passage of
-                    Lorem Ipsum, you need to be sure there isn't anything
-                    embarrassing hidden in the middle of text. - 6.1 oz. 100%
-                    preshrunk heavyweight cotton - Shoulder-to-shoulder taping -
-                    Double-needle sleeves and bottom hem <br /><br />
-                    It uses a dictionary of over 200 Latin words, combined with a
-                    handful of model sentence structures, to generate Lorem Ipsum
-                    which looks reasonable.
-                  </p>
-                </div>
-                <div class="tab2">
-                  <p>
-                    If you're in between sizes, we recommend sizing up. Great for
-                    low and moderate activity. <br /><br />
-                    Inseam: 28"<br /><br />
-                    58% Recycled Nylon, 42% Elastane Machine wash cold, tumble dry
-                    low<br /><br />
-                    Interior front pocket fits cards and keys Medium coverage<br /><br />
-                    Made in Kandy, Sri Lanka
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Perferendis, maiores.
-                  </p>
-                </div>
-                <div class="tab3">
-                  <p>
-                    <!-- TODO: Add random reviews -->
-                    The trousers are super comfy. I like it!
-                  </p>
-                  <p>
-                    <!-- TODO: Add random reviews -->
-                  </p>
-                  <p>
-                    <!-- TODO: Add random reviews -->
-                  </p>
-                </div>
-              </section>
-            </div>
           </section>
 
+          <section class="item__moreInfo">
+            <ul class="moreInfo__tabs">
+              <li data-tab-target="#product-desc" class="active tab">
+                PRODUCT DESCRIPTION
+              </li>
+              <li data-tab-target="#additional-info" class="tab">
+                ADDITIONAL INFOMATION
+              </li>
+              <li data-tab-target="#reviews" class="tab">
+                <label for="tab3">REVIEWS</label>
+              </li>
+            </ul>
+            <section class="tab__content">
+              <div id="product-desc" data-tab-content class="active">
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. <br /><br />There
+                  are many variations of passages of Lorem Ipsum available, but
+                  the majority have suffered alteration in some form, by
+                  injected humour, or randomised words which don't look even
+                  slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. - 6.1 oz. 100%
+                  preshrunk heavyweight cotton - Shoulder-to-shoulder taping -
+                  Double-needle sleeves and bottom hem <br /><br />
+                  It uses a dictionary of over 200 Latin words, combined with a
+                  handful of model sentence structures, to generate Lorem Ipsum
+                  which looks reasonable.
+                </p>
+              </div>
+              <div id="additional-info" data-tab-content>
+                <p>
+                  If you're in between sizes, we recommend sizing up. Great for
+                  low and moderate activity. <br /><br />
+                  Inseam: 28"<br /><br />
+                  58% Recycled Nylon, 42% Elastane Machine wash cold, tumble dry
+                  low<br /><br />
+                  Interior front pocket fits cards and keys Medium coverage<br /><br />
+                  Made in Kandy, Sri Lanka
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perferendis, maiores.
+                </p>
+              </div>
+              <div id="reviews" data-tab-content>
+                <p>
+                  <!-- TODO: Add random reviews -->
+                  The trousers are super comfy. I like it!
+                </p>
+                <p>
+                  <!-- TODO: Add random reviews -->
+                </p>
+                <p>
+                  <!-- TODO: Add random reviews -->
+                </p>
+              </div>
+            </section>
+          </section>
           <!-- Main: 2. suggestion -->
           <section class="suggestion">
             <div class="wrapper">
@@ -307,8 +298,8 @@
         FOOTER
       </footer>
     </div>
-
   </div>
+  <script src="../js/product-detail.js"></script>
 </body>
 
 </html>
