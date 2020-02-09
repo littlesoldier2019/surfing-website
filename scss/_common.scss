@@ -36,6 +36,14 @@ body {
   text-decoration: none;
 }
 
+.content {
+  display: none;
+}
+
+.content.active {
+  display: flex;
+}
+
 .desc {
   &__icons {
     display: flex;
