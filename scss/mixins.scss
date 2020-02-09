@@ -1,19 +1,32 @@
 //Mixins
 @mixin spec {
-  .spec__title {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    height: 15px;
+    width: 80%;
+    border: transparent;
+    border-top: .5px solid $greyBorder;
+  }
+
+  &__title {
     font-size: $subTitle;
     font-weight: bold;
   }
 
-  .spec__info {
+  &__info {
     font-size: $normalText;
   }
 }
 
-@mixin wrapper {
-  width: 80%;
-  height: auto;
-}
+// @mixin wrapper {
+//   width: 80%;
+//   height: auto;
+// }
 
 @mixin slider {
   display: grid;

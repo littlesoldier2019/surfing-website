@@ -1,0 +1,141 @@
+.item {
+  border: 2px solid grey;
+  display: grid;
+  grid-template-areas:
+    "img cart"
+    "info info";
+
+  &__imgs {
+    grid-area: img;
+    display: grid;
+  }
+
+  &__cart {
+    border: 2px solid yellowgreen;
+    grid-area: cart;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  border: 2px solid green;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  font-weight: bold;
+}
+
+#rating__counter {
+  margin: 0;
+}
+
+#rating__addReview {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.availability {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  &__price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__inStock {
+    text-align: right;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.spec {
+  @include spec;
+}
+
+.spec__info--btns {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+}
+
+.size,
+.length {
+  border: 1px solid black;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  background-color: white;
+  text-align: center;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.addToCart {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+
+  .quan,
+  .addToCartBtn,
+  .otherBtns {
+    border: 1px solid turquoise;
+    margin-left: .5rem;
+  }
+
+  .quan__input {
+    width: 2rem;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  .btn {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn--orange {
+    padding: 1rem;
+    background-color: $orange;
+    color: white;
+    font-size: 18px;
+  }
+
+  .btn--plain {
+    padding: 0;
+    margin-bottom: .2rem;
+    background-color: transparent;
+    font-weight: bold;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+
+.item__moreInfo {
+  grid-area: info;
+}
