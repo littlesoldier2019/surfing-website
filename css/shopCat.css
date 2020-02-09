@@ -17,28 +17,32 @@ body {
 /************ shop-cat-header ***************/
 
 .eshopCat__header {
-    /* display: flex; */
+    display: flex;
     width: 100%;
     background-color: #ACEBFA;
+}
 
+.header__left {
+    width: 50%;
 }
 
 .header__logo {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     width: 20%;
     margin-left: 140px;
 }
 
 .header__logo>img {
-    margin: 20px auto;
+    padding: 20px;
+    padding-left: 65px;
 }
 
 .header__cart {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 20%;
+    width: 40%;
     padding-bottom: 20px;
     margin-left: 140px;
     text-transform: uppercase;
@@ -74,6 +78,29 @@ body {
     /* padding: 0 10px; */
     outline: none;
     border: transparent;
+}
+
+.header__right {
+    position: relative;
+    width: 50%;
+}
+
+.socials {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    display: flex;
+}
+
+.socials i {
+    margin-left: 10px;
+    color: white;
+}
+
+#choose__lang {
+    background-color: transparent;
+    border: transparent;
+    color: white;
 }
 
 /************* shop-cat-grid *************/
@@ -207,9 +234,8 @@ li.active {
 .display__block {
     display: flex;
     flex-direction: column;
-    /* width: 200px;
-    height: 200px; */
     margin: 10px;
+    width: 300;
     text-align: center;
     align-items: center;
     background-color: white;
