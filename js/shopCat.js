@@ -17,7 +17,7 @@ const buildBlocks = (blocks) => {
         blockTextUp = document.createElement('p')
         blockTextDown = document.createElement('p')
         displayBlock.className = 'display__block'
-        blockImage.setAttribute('src', 'https://via.placeholder.com/250x250')
+        blockImage.setAttribute('src', 'https://via.placeholder.com/200x200')
         blockText.className = 'block__text'
         blockTextUp.textContent = 'sleeve spring suite'
         blockTextDown.textContent = '€864.00'

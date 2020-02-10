@@ -8,8 +8,9 @@ body {
     font-size: 14px;
 }
 
-.eshopCat__container {
+.eshopCat__wrapper {
     display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #f8f8f8;
 }
@@ -18,24 +19,29 @@ body {
 
 .eshopCat__header {
     display: flex;
+    justify-content: center;
     width: 100%;
     background-color: #ACEBFA;
 }
 
 .header__left {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    width: 40%;
+    margin-right: 15px;
 }
 
 .header__logo {
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     width: 20%;
-    margin-left: 140px;
+    margin-left: 30px;
 }
 
 .header__logo>img {
     padding: 20px;
-    padding-left: 65px;
+    padding-left: 150px;
 }
 
 .header__cart {
@@ -44,9 +50,8 @@ body {
     justify-content: center;
     width: 40%;
     padding-bottom: 20px;
-    margin-left: 140px;
+    margin-left: 30px;
     text-transform: uppercase;
-    /* width: 200px; */
 }
 
 .cart__top {
@@ -82,13 +87,13 @@ body {
 
 .header__right {
     position: relative;
-    width: 50%;
+    width: 40%;
 }
 
 .socials {
     position: absolute;
     top: 50px;
-    right: 150px;
+    right: 0px;
     display: flex;
 }
 
@@ -101,26 +106,28 @@ body {
     background-color: transparent;
     border: transparent;
     color: white;
+    margin-left: 10px;
 }
 
 /************* shop-cat-grid *************/
+
 .eshopCat__main {
     display: flex;
     justify-content: center;
     width: 100%;
-    border: 1px dotted blue;
-
 }
 
+/*      sidebar      */
 .eshopCat__sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 20%;
-    margin-left: 140px;
-    /* border: 1px solid red; */
+    margin-left: 130px;
+    margin-right: 10px;
 }
 
 .eshopCat__sidebar>div {
-    display: flex;
-    align-items: center;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -129,12 +136,12 @@ body {
     background-color: white;
 }
 
-.sidebar__menu {
+.sidebar__list {
     background-color: #21D3FC;
     width: 150px;
 }
 
-ul {
+.sidebar__menuList {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -142,42 +149,32 @@ ul {
 
 }
 
-li {
+.sidebar__menuItem {
     font-weight: bold;
     padding: 8px 0px;
     padding-left: 30px;
 }
 
-li a {
+.sidebar__menuItem a {
     display: block;
     text-decoration: none;
     padding: 10px auto;
 
 }
 
-li:first-child {
+.sidebar__menuItem:first-child {
     background-color: #000;
     color: white;
 }
 
-li:hover {
+.sidebar__menuItem:hover {
     background-color: #000;
     color: white;
 }
 
-li.active {
+.sidebar__menuItem.active {
     background-color: #000;
     color: white;
-}
-
-.sidebar__catOptions {
-    background-color: #21D3FC;
-    width: 150px;
-}
-
-.sidebar__brandOptions {
-    background-color: #21D3FC;
-    width: 150px;
 }
 
 .sidebar__tagsWidget {
@@ -206,19 +203,77 @@ li.active {
     background-color: lightgray
 }
 
+/*      grid     */
 
 .eshopCat__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     width: 60%;
-    margin-left: 20px;
-    margin-right: 125px;
-    /* border: 1px solid green; */
+    margin-left: 10px;
+    margin-right: 130px;
 }
 
 .grid__filter {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 10px 15px;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.filterTop__sort>select {
+    margin: 0 8px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-overflow: '';
+    border-radius: 0;
+}
+
+.viewAs__thumbnail {
+    margin: 0 10px;
+    margin-bottom: -3px;
+}
+
+.viewAs__viewlist {
+    margin-bottom: -3px;
+}
+
+.filterTop__show>input {
+    width: 60px;
+    margin: 0 8px;
+}
+
+.fa-chevron-down {
+    margin-left: -22px;
+    margin-right: 10px;
+    font-size: 10px;
+    color: gray;
+}
+
+.filterTop__pageNum .pageNum__btn {
+    border: none;
+    background: transparent;
+}
+
+.filterTop__pageNum .pageNum__btn--current {
+    margin: 0 5px;
+    /* font-size: 16px; */
+    background-color: #21D3FC;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+.filterTop__pageNum .pageNum__arrow--right {
+    height: 8px;
+    width: 8px;
 }
 
 .grid__display {
@@ -234,7 +289,7 @@ li.active {
 .display__block {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 5px;
     width: 300;
     text-align: center;
     align-items: center;
