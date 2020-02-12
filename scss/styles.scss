@@ -5,7 +5,6 @@
 @import "_item";
 @import "_moreInfo";
 
-
 body {
   background-color: $bodyColor;
   font-family: Roboto, Railway;
@@ -21,37 +20,27 @@ body {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   height: auto;
-}
 
-.product-detail {
-  border: 3px solid red;
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-areas:
-    "head head head"
-    "sidebar main main"
-    "footer footer footer";
-  justify-content: center;
-  align-items: center;
 }
-
-// .wrapper {
-//   @include wrapper;
-// }
 
 header {
   border: 2px solid blue;
   width: 100%;
-  grid-area: head;
+  // grid-area: head;
 }
 
 .sidebar {
   border: 2px solid blueviolet;
-  grid-area: sidebar;
 }
+
+.main {
+  border: 5px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .main-content {
   grid-area: main;

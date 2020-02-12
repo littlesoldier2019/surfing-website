@@ -7,299 +7,343 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!-- Font: Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <!-- Font: Railway -->
   <link
     href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,700,700i,800,800i,900,900i&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../css/product-detail.css" />
+  <link rel="stylesheet" href="../css/glide.core.min.css">
+  <link rel="stylesheet" href="../css/glide.theme.min.css">
   <title>Product Detail</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="product-detail">
-      <!------------ HEADER ------------>
-      <header>
-        <!-- TODO: Add header contents -->
-        HEADER
-      </header>
-      <!------------ SIDE BAR ------------>
-      <!-- TODO: Add contents later inside sidebar DIV -->
-      <div class="sidebar">
-        <div class="wrapper">
-          SIDEBAR
-        </div>
+    <!------------ HEADER ------------>
+    <header>
+      <!-- TODO: Add header contents -->
+      HEADER
+    </header>
+    <!------------ SIDE BAR ------------>
+    <!-- TODO: Add contents later inside sidebar DIV -->
+    <div class="sidebar">
+      <div class="wrapper">
+        SIDEBAR
       </div>
+    </div>
+    <div class="main">
+      <nav class="nav">
+        <ul class="nav__category">
+          <li class="nav__category--li">
+            <a href="index.html">HOME</a>
+          </li>
+          <div class="nav__category--arrow">>></div>
+          <li class="nav__category--li"><a href="#">APPAREL</a></li>
+          <div class="nav__category--arrow">>></div>
+          <li class="nav__category--li"><a href="#">WOMEN</a></li>
+          <div class="nav__category--arrow">>></div>
+          <li class="nav__category--li">
+            <a href="#">PEEKY CROPED</a>
+          </li>
+        </ul>
+        <div class="nav__previous">
+          <p>
+            << <a href="#">Back to previous page</a>
+          </p>
+        </div>
+      </nav>
 
-      <!------------ MAIN ------------>
-      <div class="main-content">
-        <div class="wrapper">
-          <nav class="nav">
-            <ul class="nav__category">
-              <li class="nav__category--li">
-                <a href="index.html">HOME</a>
-              </li>
-              <div class="nav__category--arrow">>></div>
-              <li class="nav__category--li"><a href="#">APPAREL</a></li>
-              <div class="nav__category--arrow">>></div>
-              <li class="nav__category--li"><a href="#">WOMEN</a></li>
-              <div class="nav__category--arrow">>></div>
-              <li class="nav__category--li">
-                <a href="#">PEEKY CROPED</a>
-              </li>
-            </ul>
-            <div class="nav__previous">
-              <p>
-                << <a href="#">Back to previous page</a>
-              </p>
+      <!-- Main: 1. Item -->
+      <section class="item">
+        <div class="item__imgs">
+          <div class="item__main-img">
+            <img class="img img-main" src="https://via.placeholder.com/370" alt="cropped trousers" />
+          </div>
+          <div class="item__img-slider">
+            <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
+            <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
+            <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
+            <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
+            <button class="btn__left--grey"></button>
+            <button class="btn__right--grey"></button>
+          </div>
+        </div>
+        <!-- *** item option *** -->
+        <div class="item__cart">
+          <h1 class="title">PEEKY CROPPED</h1>
+          <div class="rating">
+            <div id="rating__star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
             </div>
-          </nav>
+            <p id="rating__counter">
+              <a id="rating__checkReview">1 Review(s)</a>
+            </p>
+            <p id="rating__addReview">| <a href="#">Add Your Review</a></p>
+          </div>
+          <div class="availability">
+            <p class="availability__price">€578.50</p>
+            <p class="availability__inStock">
+              Availability:
+              <span class="availability__inStock--bold">In stock</span>
+            </p>
+          </div>
+          <div class="spec spec__overview">
+            <h2 class="spec__title">QUICK OVERVIEW</h2>
+            <p class="spec__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+              adipisci, repellendus consequatur temporibus accusantium, sed
+              consequuntur architecto, ab fugiat vel mollitia cum illo id
+              quidem! Dolore itaque enim cumque recusandae.
+            </p>
+          </div>
+          <form class="form" action="">
+            <div class="spec spec__size">
+              <h2 class="spec__title">SIZE</h2>
+              <div class="spec__info--btns">
+                <div class="spec__option size">25</div>
+                <div class="spec__option size">26</div>
+                <div class="spec__option size">27</div>
+                <div class="spec__option size">28</div>
+                <div class="spec__option size">29</div>
+                <div class="spec__option size">30</div>
+                <div class="spec__option size">31</div>
+                <div class="spec__option size">32</div>
+              </div>
+            </div>
+            <div class="spec spec__length">
+              <h2 class="spec__title">LENGTH</h2>
+              <div class="spec__info--btns">
+                <div class="spec__option length">32</div>
+                <div class="spec__option length">34</div>
+              </div>
+            </div>
+            <div class="addToCart">
+              <div class="quan">
+                <h2 class="quan__title spec__title">QUANTITY</h2>
+                <div class="quan__select">
+                  <input class="quan__input" type="number" />
+                  <button class="btn btn--plain">+</button>
+                </div>
+              </div>
+              <div class="addToCartBtn">
+                <button class="btn btn--orange">ADD TO CART</button>
+              </div>
+              <div class="otherBtns">
+                <button class="btn btn--plain">+ Add to WishList</button>
+                <button class="btn btn--plain">+ Add to Compare</button>
+                <button class="btn btn--plain">
+                  + Email to a friend
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
 
-          <!-- Main: 1. Item -->
-          <section class="item">
-            <div class="item__imgs">
-              <div class="item__main-img">
-                <img class="img img-main" src="https://via.placeholder.com/370" alt="cropped trousers" />
-              </div>
-              <div class="item__img-slider">
-                <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
-                <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
-                <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
-                <img class="img img-slider__img" src="https://via.placeholder.com/70x110" alt="cropped trousers" />
-                <button class="btn__left--grey"></button>
-                <button class="btn__right--grey"></button>
-              </div>
-            </div>
-            <!-- *** item option *** -->
-            <div class="item__cart">
-              <h1 class="title">PEEKY CROPPED</h1>
-              <div class="rating">
-                <div id="rating__star">
-                  <!-- TODO: add star rating-->
-                </div>
-                <p id="rating__counter"><a id="rating__checkReview">1 Review(s)</a></p>
-                <p id="rating__addReview">
-                  | <a href="#">Add Your Review</a>
-                </p>
-              </div>
-              <div class="availability">
-                <p class="availability__price">€578.50</p>
-                <p class="availability__inStock">
-                  Availability:
-                  <span class="availability__inStock--bold">In stock</span>
-                </p>
-              </div>
-              <div class="spec spec__overview">
-                <h2 class="spec__title">QUICK OVERVIEW </h2>
-                <p class="spec__info">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
-                  adipisci, repellendus consequatur temporibus accusantium, sed
-                  consequuntur architecto, ab fugiat vel mollitia cum illo id
-                  quidem! Dolore itaque enim cumque recusandae.
-                </p>
-              </div>
-              <form class="form" action="">
-                <div class="spec spec__size">
-                  <h2 class="spec__title">SIZE </h2>
-                  <div class="spec__info--btns">
-                    <div class="spec__option size">25</div>
-                    <div class="spec__option size">26</div>
-                    <div class="spec__option size">27</div>
-                    <div class="spec__option size">28</div>
-                    <div class="spec__option size">29</div>
-                    <div class="spec__option size">30</div>
-                    <div class="spec__option size">31</div>
-                    <div class="spec__option size">32</div>
-                  </div>
-                </div>
-                <div class="spec spec__length">
-                  <h2 class="spec__title">LENGTH</h2>
-                  <div class="spec__info--btns">
-                    <div class="spec__option length">32</div>
-                    <div class="spec__option length">34</div>
-                  </div>
-                </div>
-                <div class="addToCart">
-                  <div class="quan">
-                    <h2 class="quan__title spec__title">QUANTITY</h2>
-                    <div class="quan__select">
-                      <input class="quan__input" type="number" />
-                      <button class="btn btn--plain">+</button>
-                    </div>
-                  </div>
-                  <div class="addToCartBtn">
-                    <button class="btn btn--orange">ADD TO CART</button>
-                  </div>
-                  <div class="otherBtns">
-                    <button class="btn btn--plain">+ Add to WishList</button>
-                    <button class="btn btn--plain">+ Add to Compare</button>
-                    <button class="btn btn--plain">+ Email to a friend</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </section>
+      <section class="item__moreInfo">
+        <ul class="moreInfo__tabs">
+          <li data-tab-target="#product-desc" class="active tab">
+            PRODUCT DESCRIPTION
+          </li>
+          <li data-tab-target="#additional-info" class="tab">
+            ADDITIONAL INFOMATION
+          </li>
+          <li data-tab-target="#reviews" class="tab">
+            <label for="tab3">REVIEWS</label>
+          </li>
+        </ul>
+        <section class="tab__content">
+          <div id="product-desc" data-tab-content class="active">
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text.
+              <br /><br />There are many variations of passages of Lorem Ipsum
+              available, but the majority have suffered alteration in some
+              form, by injected humour, or randomised words which don't look
+              even slightly believable. If you are going to use a passage of
+              Lorem Ipsum, you need to be sure there isn't anything
+              embarrassing hidden in the middle of text. - 6.1 oz. 100%
+              preshrunk heavyweight cotton - Shoulder-to-shoulder taping -
+              Double-needle sleeves and bottom hem <br /><br />
+              It uses a dictionary of over 200 Latin words, combined with a
+              handful of model sentence structures, to generate Lorem Ipsum
+              which looks reasonable.
+            </p>
+          </div>
+          <div id="additional-info" data-tab-content>
+            <p>
+              If you're in between sizes, we recommend sizing up. Great for
+              low and moderate activity. <br /><br />
+              Inseam: 28"<br /><br />
+              58% Recycled Nylon, 42% Elastane Machine wash cold, tumble dry
+              low<br /><br />
+              Interior front pocket fits cards and keys Medium coverage<br /><br />
+              Made in Kandy, Sri Lanka
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis, maiores.
+            </p>
+          </div>
+          <div id="reviews" data-tab-content>
+            <p>
+              <!-- TODO: Add random reviews -->
+              The trousers are super comfy. I like it!
+            </p>
+            <p>
+              <!-- TODO: Add random reviews -->
+            </p>
+            <p>
+              <!-- TODO: Add random reviews -->
+            </p>
+          </div>
+        </section>
+      </section>
+      <!-- Main: 2. suggestion -->
+      <section class="suggestion">
+        <h2>You May Also Like</h2>
+        <div class="glider-contain multiple">
 
-          <section class="item__moreInfo">
-            <ul class="moreInfo__tabs">
-              <li data-tab-target="#product-desc" class="active tab">
-                PRODUCT DESCRIPTION
-              </li>
-              <li data-tab-target="#additional-info" class="tab">
-                ADDITIONAL INFOMATION
-              </li>
-              <li data-tab-target="#reviews" class="tab">
-                <label for="tab3">REVIEWS</label>
-              </li>
-            </ul>
-            <section class="tab__content">
-              <div id="product-desc" data-tab-content class="active">
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text. <br /><br />There
-                  are many variations of passages of Lorem Ipsum available, but
-                  the majority have suffered alteration in some form, by
-                  injected humour, or randomised words which don't look even
-                  slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text. - 6.1 oz. 100%
-                  preshrunk heavyweight cotton - Shoulder-to-shoulder taping -
-                  Double-needle sleeves and bottom hem <br /><br />
-                  It uses a dictionary of over 200 Latin words, combined with a
-                  handful of model sentence structures, to generate Lorem Ipsum
-                  which looks reasonable.
-                </p>
-              </div>
-              <div id="additional-info" data-tab-content>
-                <p>
-                  If you're in between sizes, we recommend sizing up. Great for
-                  low and moderate activity. <br /><br />
-                  Inseam: 28"<br /><br />
-                  58% Recycled Nylon, 42% Elastane Machine wash cold, tumble dry
-                  low<br /><br />
-                  Interior front pocket fits cards and keys Medium coverage<br /><br />
-                  Made in Kandy, Sri Lanka
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Perferendis, maiores.
-                </p>
-              </div>
-              <div id="reviews" data-tab-content>
-                <p>
-                  <!-- TODO: Add random reviews -->
-                  The trousers are super comfy. I like it!
-                </p>
-                <p>
-                  <!-- TODO: Add random reviews -->
-                </p>
-                <p>
-                  <!-- TODO: Add random reviews -->
-                </p>
-              </div>
-            </section>
-          </section>
-          <!-- Main: 2. suggestion -->
-          <section class="suggestion">
-            <div class="wrapper">
-              <h2>You May Also Like</h2>
-              <div class="suggestion__slider">
-                <div class="imgCard">
+          <div class="glider">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
                   <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">SLEEVE SPRING SUIT</p>
                     <p class="imgCard__info--price">€865.00</p>
                   </div>
-                </div>
-                <div class="imgCard">
+                </li>
+                <li class="glide__slide">
                   <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">SALTY DAYZ</p>
                     <p class="imgCard__info--price">€770.50</p>
                   </div>
-                </div>
-                <div class="imgCard">
+                </li>
+                <li class="glide__slide">
                   <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">CHEEKY JANE</p>
                     <p class="imgCard__info--price">€280.50</p>
                   </div>
-                </div>
-                <div class="imgCard">
+                </li>
+                <li class="glide__slide">
                   <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">ORANGE WAVE</p>
                     <p class="imgCard__info--price">€490.50</p>
                   </div>
-                </div>
-              </div>
-              <button class="btn__left--blue" onclick="plusDivs(-1)">
-                &#10094;
-              </button>
-              <button class="btn__right--blue" onclick="plusDivs(1)">
-                &#10095;
-              </button>
+                </li>
+              </ul>
             </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+              <button class="glide__bullet" data-glide-dir="=3"></button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          </section>
-
-          <!--Main 3. viewed-->
-          <section class="viewed">
-            <div class="wrapper">
-              <h2>Recently Viewed</h2>
-              <div class="viewed__slider">
-                <div class="imgCard">
+      <!--Main 3. viewed-->
+      <section class="viewed">
+        <h2>Recently Viewed</h2>
+        <div class="glider-contain multiple">
+          <div class="glider">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
                   <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">SYNERGY 2MM BACK ZIP</p>
                     <p class="imgCard__info--price">€765.00</p>
                   </div>
-                </div>
-                <div class="imgCard">
-                  <img class="imgCard__img" src="https://via.placeholder.com/250x235">
+                </li>
+                <li class="glide__slide">
+                  <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">SYNERGY 2MM</p>
                     <p class="imgCard__info--price">€230.50</p>
                   </div>
-                </div>
-                <div class="imgCard">
-                  <img class="imgCard__img" src="https://via.placeholder.com/250x235">
+                </li>
+                <li class="glide__slide">
+                  <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">SURF YOKE 19 QS</p>
                     <p class="imgCard__info--price">€330.70</p>
                   </div>
-                </div>
-                <div class="imgCard">
-                  <img class="imgCard__img" src="https://via.placeholder.com/250x235">
+                </li>
+                <li>
+                  <img class="imgCard__img" src="https://via.placeholder.com/250x235" />
                   <div class="imgCard__info">
                     <p class="imgCard__info--name">BRISBANE NX</p>
                     <p class="imgCard__info--price">€190.50</p>
                   </div>
-                </div>
-              </div>
-              <button class="btn__left--blue" onclick="plusDivs(-1)">
-                &#10094;
-              </button>
-              <button class="btn__right--blue" onclick="plusDivs(1)">
-                &#10095;
-              </button>
+                </li>
+              </ul>
             </div>
-          </section>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+              <button class="glide__bullet" data-glide-dir="=3"></button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <!------------ FOOTER ------------>
-      <footer class="footer">
-        FOOTER
-      </footer>
+      </section>
     </div>
+    <!------------ FOOTER ------------>
+    <footer class="footer">
+      FOOTER
+    </footer>
   </div>
+
   <script src="../js/product-detail.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const config = {
+      type: "carousel",
+      perView: 3.5,
+      startAt: 0,
+      gap: 5,
+      autoplay: 2000,
+      hoverpause: true,
+      breakpoints: {
+        1080: {
+          perView: 2
+        },
+        650: {
+          perView: 2
+        }
+      }
+    }
+
+    const sliders = document.querySelectorAll('.glider');
+
+    sliders.forEach(item => {
+      new Glide(item, config).mount()
+    })
+  </script>
 </body>
 
 </html>

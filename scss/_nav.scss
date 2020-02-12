@@ -1,8 +1,10 @@
 .nav {
   border: 2px solid orange;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav__category {
@@ -24,8 +26,11 @@
       text-align: center;
       font-size: $normalText;
       color: $greyText;
+      cursor: pointer;
     }
   }
+
+  .nav__category--li: hover {}
 
   &--arrow {
     font-size: $normalText;

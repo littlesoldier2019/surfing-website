@@ -1,32 +1,36 @@
 .item {
   border: 2px solid grey;
-  display: grid;
-  grid-template-areas:
-    "img cart";
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  // display: grid;
+  // grid-template-areas: "img cart";
 
-  align-items: center;
-  align-content: start;
-  justify-items: center;
+  // align-items: center;
+  // justify-items: center;
 
-  &__imgs {
-    grid-area: img;
-    display: grid;
-    margin-right: 1.5rem;
-  }
+  // &__imgs {
+  //   // grid-area: img;
+  //   display: grid;
+  //   margin-right: 1.3rem;
+  // }
 
   &__cart {
     border: 2px solid yellowgreen;
-    grid-area: cart;
+    max-width: 600px;
+    // grid-area: cart;
     display: flex;
     flex-direction: column;
   }
 }
 
-.item__main-img,
-.item__img-slider {
-  border: 2px solid salmon;
-}
-
+// .item__main-img,
+// .item__img-slider {
+//   border: 2px solid salmon;
+// }
 
 .title {
   margin-top: 0;
@@ -35,13 +39,22 @@
 
 .rating {
   border: 2px solid green;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+  display: flex;
+  flex-wrap: wrap;
   font-weight: bold;
+}
+
+.checked {
+  color: orange;
+}
+
+#rating__star {
+  margin-right: 1rem;
 }
 
 #rating__counter {
   margin: 0;
+  margin-right: 1rem;
 }
 
 #rating__addReview {
@@ -54,9 +67,11 @@
 }
 
 .availability {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // justify-content: center;
   align-items: center;
 
   &__price {
@@ -87,10 +102,10 @@
 .size,
 .length {
   border: 1px solid black;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  margin-right: .5rem;
-  margin-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   background-color: white;
   text-align: center;
 
@@ -100,15 +115,18 @@
 }
 
 .addToCart {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   align-items: center;
 
   .quan,
   .addToCartBtn,
   .otherBtns {
     border: 1px solid turquoise;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 
   .quan {
@@ -141,7 +159,7 @@
   }
 
   .btn--orange {
-    padding: 1rem .7rem;
+    padding: 1rem 0.7rem;
     background-color: $orange;
     color: white;
     font-size: 18px;
@@ -149,7 +167,7 @@
 
   .btn--plain {
     padding: 0;
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
     background-color: transparent;
     font-weight: bold;
 
