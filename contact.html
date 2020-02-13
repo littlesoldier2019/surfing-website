@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <script src="js\contact.js"></script>
     <script src="https://kit.fontawesome.com/3146a6b7a3.js" crossorigin="anonymous"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQYJ0r3QuzcsseEp2V4Mp7_fZsCExgJJ8&callback=initMap">
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQYJ0r3QuzcsseEp2V4Mp7_fZsCExgJJ8&callback=initMap"> -->
     </script>
     <script src="js\contact.js"></script>
   </head>
@@ -50,14 +50,16 @@
          </div>
           <div class="main__body">
             <div class="contact-form">
-              <form>
+              <div id="errorText">
+              </div>
+              <form id="form">
                 <div>
-                  <label for="full-name">full name</label>
-                  <input type="text" id="full-name" name="full-name" placeholder="e.g. Robert Smith" required>
+                  <label class="required" for="full-name">full name</label>
+                  <input  type="text" id="full-name" name="full-name" placeholder="e.g. Robert Smith " required>
                 </div>
                 <div>
-                  <label for="email">email</label>
-                  <input type="email" id="email" name="email" placeholder="e.g. name@home.com" required>
+                  <label class="required" for="email">email</label>
+                  <input  type="email" id="email" name="email" placeholder="e.g. name@home.com" required>
                 </div>
                 <div>
                   <label for="company">company</label>
@@ -65,14 +67,14 @@
                 </div>
                 <div>
                   <label for="subject">subject</label>
-                  <input type="text" id="subject" name="subject" placeholder="e.g. info" required>
+                  <input type="text" id="subject" name="subject" placeholder="e.g. info" >
                 </div>
                 <div>
-                  <label for="message">message</label>
-                  <textarea name="message" rows="10" cols="30"></textarea>
+                  <label class="required" for="message">message</label>
+                  <textarea  name="message"  id="message" rows="10" cols="30" required></textarea>
                 </div>
                 <div>
-                  <button id="contact-form">submit</button>
+                  <button type="submit" id="contact-form">submit</button>
                 </div>          
               </form>
             </div>

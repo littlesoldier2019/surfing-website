@@ -180,6 +180,19 @@ label {
 input {
     width: 100%;
     margin: .3rem 0 1rem 0;
+    padding-left: .5rem;
+  }
+
+.required {
+  position: relative;
+}
+.required:after {
+  content:" *";
+  color: red;
+  position: absolute;
+  font-size: 10px;
+  top: 0;
+  left: -8px;
   }
   
 textarea {
