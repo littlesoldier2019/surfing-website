@@ -28,12 +28,12 @@
 //   height: auto;
 // }
 
-@mixin slider {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+// @mixin slider {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
 
-  .imgCard {
-    display: grid;
-    grid-template-rows: 80% 20%;
-  }
-}
+//   .imgCard {
+//     display: grid;
+//     grid-template-rows: 80% 20%;
+//   }
+// }

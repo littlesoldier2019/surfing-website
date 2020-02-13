@@ -33,27 +33,36 @@ header {
 
 .sidebar {
   border: 2px solid blueviolet;
+  width: 15%;
+  height: 100%;
+  position: relative;
 }
 
 .main {
   border: 5px solid red;
+
+  position: absolute;
+  left: 15%;
+
+  width: 90%;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
 }
-
 
 .main-content {
   grid-area: main;
 }
 
 
-.suggestion__slider {
-  @include slider;
-}
+// .suggestion__slider {
+//   @include slider;
+// }
 
-.viewed__slider {
-  @include slider;
-}
+// .viewed__slider {
+//   @include slider;
+// }
 
 footer {
   grid-area: footer;
@@ -67,4 +76,9 @@ footer {
     width: 100%;
   }
 
+}
+
+.swiper-container {
+  width: 800px;
+  height: 300px;
 }

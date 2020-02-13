@@ -16,3 +16,10 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+
+// const sliders = document.querySelectorAll(".swiper-container");
+
+// sliders.forEach(slider => {
+//   new Swiper(slider, config);
+// });
