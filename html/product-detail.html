@@ -129,7 +129,29 @@
                 <p id="rating__counter">
                   <a id="rating__checkReview">1 Review(s)</a>
                 </p>
-                <p id="rating__addReview">| <a href="#">Add Your Review</a></p>
+                <p id="addReview__btn">| <a href="#"> Add Your Review</a></p>
+                <div class="modal" id="rating__modal">
+                  <div class="modal-content">
+                    <span class="closeBtn" id="closeBtn">&times;</span>
+                    <h2 class="review__text review__header">
+                      What did you like about this product?
+                    </h2>
+                    <h3 class="review__text review__product">PEEKY CROPPED</h3>
+                    <div id="modal__reviewContent">
+                      <span id="required">*Required field</span>
+                      <p class="review__text">Write a Review*</p>
+                      <input
+                        type="text"
+                        placeholder="Why did you like th product or why not? 3500 chracter maximum"
+                      />
+                    </div>
+                    <div id="modal__reviewContent">
+                      <p class="review__text">Review Title*</p>
+                      <input type="text" placeholder="150 chracter maximum" />
+                    </div>
+                    <button id="modal__sendBtn">SEND</button>
+                  </div>
+                </div>
               </div>
               <div class="availability">
                 <p class="availability__price">€578.50</p>
