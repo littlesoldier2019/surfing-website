@@ -185,6 +185,12 @@ header {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: .5rem;
+}
+
 .closeBtn {
   color: #ccc;
   float: right;
@@ -213,11 +219,64 @@ header {
   font-weight: 300;
 }
 
-.review__text {
+.review__title {
   font-weight: bold;
 }
 
+.star {
+  color: goldenrod;
+  font-size: 2rem;
+  padding: 0.1rem;
+  /* space out the stars */
+}
 
+.star::before {
+  content: '\2606';
+  /* star outline */
+  cursor: pointer;
+}
+
+.star.rated::before {
+  /* the style for a selected star */
+  content: '\2605';
+  /* filled star */
+}
+
+.review__stars {
+  font-size: 1rem;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* #customerReviewStars {
+  counter-reset: rateme 0;
+  font-size: 2.0rem;
+  font-weight: 900;
+} */
+/* 
+.star.rated {
+  counter-increment: rateme 1;
+} */
+
+/* #customerReviewStars::after {
+  content: counter(rateme) '/5';
+} */
+
+
+#customerReviewContent {
+  height: 150px;
+  text-align: justify;
+  overflow: auto;
+  font-family: Roboto, Railway;
+}
+
+#modal__sendBtn {
+  background-color: #21D3FC;
+  color: white;
+  border: none;
+  padding: .7rem .5rem;
+  margin-top: 1rem;
+}
 
 /* ------------------------ */
 /* MODAL TO ADD REVIEWS ENDS*/
