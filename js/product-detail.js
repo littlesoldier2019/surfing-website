@@ -11,7 +11,7 @@ const sizeBtns = document.querySelector(".sizeBtns");
 const lengthBtns = document.querySelector(".lengthBtns");
 const addToCartBtn = document.getElementById("addToCartBtn");
 
-let cart = {
+let cartItem = {
   product: "Peeky Cropped",
   size: null,
   length: null,
@@ -118,28 +118,28 @@ class UI {
     this.clearSize();
     let userChoice = e.target;
     userChoice.style.color = "orange";
-    cart.size = userChoice.textContent;
+    cartItem.size = userChoice.textContent;
   }
 
   static clearSize() {
     for (let i = 0; i < sizeBtns.children.length; i++) {
       sizeBtns.children[i].style.color = "black";
     }
-    cart.size = null;
+    cartItem.size = null;
   }
 
   static selectLength(e) {
     this.clearLength();
     let userChoice = e.target;
     userChoice.style.color = "orange";
-    cart.length = userChoice.textContent;
+    cartItem.length = userChoice.textContent;
   }
 
   static clearLength() {
     for (let i = 0; i < lengthBtns.children.length; i++) {
       lengthBtns.children[i].style.color = "black";
     }
-    cart.length = null;
+    cartItem.length = null;
   }
 
   static cartValidation() {}
