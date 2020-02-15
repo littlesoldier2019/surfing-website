@@ -7,15 +7,16 @@ const addReview = document.getElementById("addReview__btn");
 const modal = document.getElementById("rating__modal");
 const reviewCloseBtn = document.getElementById("closeBtn");
 const reviewSendBtn = document.getElementById("modal__sendBtn");
+const sizeBtns = document.querySelector(".sizeBtns");
+const lengthBtns = document.querySelector(".lengthBtns");
+const addToCartBtn = document.getElementById("addToCartBtn");
 
-class Cart {
-  constructor(product, size, length, quan) {
-    this.product = product;
-    this.size = size;
-    this.length = length;
-    this.quan = quan;
-  }
-}
+let cart = {
+  product: "Peeky Cropped",
+  size: null,
+  length: null,
+  quan: null
+};
 
 class UI {
   // More Info tab
@@ -113,44 +114,63 @@ class UI {
     modal.style.display = "none";
   }
 
+  static selectSize(e) {
+    this.clearSize();
+    let userChoice = e.target;
+    userChoice.style.color = "orange";
+    cart.size = userChoice.textContent;
+  }
+
+  static clearSize() {
+    for (let i = 0; i < sizeBtns.children.length; i++) {
+      sizeBtns.children[i].style.color = "black";
+    }
+    cart.size = null;
+  }
+
+  static selectLength(e) {
+    this.clearLength();
+    let userChoice = e.target;
+    userChoice.style.color = "orange";
+    cart.length = userChoice.textContent;
+  }
+
+  static clearLength() {
+    for (let i = 0; i < lengthBtns.children.length; i++) {
+      lengthBtns.children[i].style.color = "black";
+    }
+    cart.length = null;
+  }
+
+  static cartValidation() {}
+
+  static addeToCartAlert(msg, type) {
+    addToCartBtn.innerHTML = msg;
+    if (type === "success") {
+      addToCartBtn.style.backgroundColor = "#3ab31e";
+    } else if (type === "fail") {
+      addToCartBtn.style.backgroundColor = "red";
+    }
+  }
+
   static showAlert(msg, type) {
     console.log(msg);
   }
 }
 
-class storage {}
-
-// Rating
-//1. When a user click Reviews, show the review section
+class storage {
+  // get the cart
+  // add to the cart
+  // remove from the cart
+  // get the wishlist
+  // add to the wishlist
+  // remove from the wishlist
+  // get the comparelist
+  // add to the comparelist
+  // remove from the comparelist
+}
 
 //Form
-// 1. Size
-// - When a user click the size, set it as the size value
-const sizeBtns = document.querySelector(".sizeBtns");
-sizeBtns.addEventListener("click", e => {
-  // Get a user's choice for a size.
-  let size = Number(e.target.textContent);
-
-  // TODO: UI
-  // 1. switch the font color to red
-  // * when the user select another size,
-  // * then the previeous choice should be changed to normal color
-  // * current selection => orange
-});
-// 2. Length
-// - When a user clikc the length, set the choice as the length value
-const lengthBtns = document.querySelector(".lengthBtns");
-lengthBtns.addEventListener("click", e => {
-  let length = Number(e.target.textContent);
-
-  // TODO: UI
-  // * when the user select another length,
-  // * then the previeous choice should be changed to normal color
-  // * current selection => orange
-});
-
-// 3. Quantity
-//- User can change the quantity through 1) typing number(v) or 2) clicking the plus button
 
 // 4. Add to cart
 //- When click the button, all form information save to the local storage
@@ -167,8 +187,7 @@ lengthBtns.addEventListener("click", e => {
 //Event
 
 const quanInput = document.getElementById("quan__input");
-const quanBtn = document.getElementById("quan__btn");
-const addToCartBtn = document.getElementById("addToCartBtn");
+
 const wishListBtn = document.getElementById("wishList__btn");
 const compareBtn = document.getElementById("compare__btn");
 
@@ -199,8 +218,33 @@ reviewCloseBtn.addEventListener("click", () => {
 
 window.addEventListener("click", e => {
   const modalContent = document.querySelector(".modal");
-  console.log(e.target);
   if (e.target === modalContent) {
     UI.closeReview();
   }
+});
+
+sizeBtns.addEventListener("click", e => {
+  // Get a user's choice for a size.
+  UI.selectSize(e);
+});
+
+lengthBtns.addEventListener("click", e => {
+  UI.selectLength(e);
+});
+
+quanInput.addEventListener("change", e => {
+  e.preventDefault();
+  console.log(e.target.value);
+});
+
+quanInput.addEventListener("keyup", e => {
+  e.preventDefault();
+  console.log(e.target.value);
+});
+
+addToCartBtn.addEventListener("click", e => {
+  e.preventDefault();
+  //show alert (success or failure)
+  UI.addeToCartAlert();
+  //store to local storage
 });
