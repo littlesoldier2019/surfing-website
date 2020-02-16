@@ -1,5 +1,12 @@
+:root {
+    --sidebar-bg-color: #21D3FC;
+    --greyish-bg-color: rgb(229, 234, 235);
+}
+
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -100,14 +107,54 @@ body {
 .socials i {
     margin-left: 10px;
     color: white;
+    font-size: 18px;
 }
 
 #choose__lang {
+    font-size: 16px;
     background-color: transparent;
     border: transparent;
     color: white;
     margin-left: 10px;
 }
+
+.grid__breadcrumbs {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px 10px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+/* select each breadcrumb item which is not the last one of that type, therefore sellecting all but the last. Then add pseudo class with ::after for the arrow */
+.breadcrumbs__item:not(:last-of-type)::after {
+    content: '>>';
+    margin: 0 5px;
+    color: #cccccc;
+}
+
+.breadcrumbs__link {
+    text-decoration: none;
+    color: #999999;
+}
+
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.breadcrumbs__link--active {
+    background-color: yellow;
+    text-decoration: none;
+    padding: 5px;
+    color: #999999;
+}
+
+
+
 
 /************* shop-cat-grid *************/
 
@@ -132,19 +179,13 @@ body {
     margin-bottom: 20px;
 }
 
-.eshopCat__sidebar>div:last-child {
-    background-color: white;
-}
-
 .sidebar__list {
-    background-color: #21D3FC;
     width: 150px;
+    background-color: var(--sidebar-bg-color);
 }
 
 .sidebar__menuList {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     width: 100%;
 
 }
@@ -153,6 +194,7 @@ body {
     font-weight: bold;
     padding: 8px 0px;
     padding-left: 30px;
+    padding-top: 10px;
 }
 
 .sidebar__menuItem a {
@@ -165,6 +207,7 @@ body {
 .sidebar__menuItem:first-child {
     background-color: #000;
     color: white;
+    padding: 20px;
 }
 
 .sidebar__menuItem:hover {
@@ -187,6 +230,7 @@ body {
     font-style: italic;
     font-weight: 700;
     text-transform: capitalize;
+    margin: 20px 25px;
 }
 
 .widget__items {
@@ -196,11 +240,49 @@ body {
     justify-content: center;
 }
 
-#tags {
-    margin: 5px;
-    width: 85px;
-    height: 30px;
-    background-color: lightgray
+.widget__items>div {
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--greyish-bg-color);
+}
+
+.kitesurfTags:first-child {
+    font-size: 16px;
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px 40px;
+}
+
+#viewAllTags {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar__open-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin: 20px auto;
+    background-color: var(--greyish-bg-color)
+}
+
+.sidebar__open-now>p {
+    text-align: right;
+    padding-right: 30px;
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.open-now__now {
+    margin-top: 100px;
+}
+
+.open-now__open {
+    margin-bottom: 50px;
 }
 
 /*      grid     */
@@ -283,7 +365,7 @@ select {
 }
 
 .display__block {
-    background-color: #e9e9e9;
+    background-color: var(--greyish-bg-color);
 }
 
 .display__block {
@@ -301,6 +383,7 @@ select {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 15px auto;
     padding: 0 5px;
     text-transform: uppercase;
     font: italic bold 12px roboto;

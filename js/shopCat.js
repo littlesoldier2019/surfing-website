@@ -7,9 +7,9 @@ gridDisplay = document.querySelector('.grid__display')
 // className = document.setAttribute('class', 'name')
 let blocks = ''
 
+// create blocks for main display grid
 const buildBlocks = (blocks) => {
     let i = blocks
-    console.log(blocks)
     for (i = 0; i < 12; i++) {
         displayBlock = document.createElement('div')
         blockImage = document.createElement('IMG')
@@ -17,7 +17,7 @@ const buildBlocks = (blocks) => {
         blockTextUp = document.createElement('p')
         blockTextDown = document.createElement('p')
         displayBlock.className = 'display__block'
-        blockImage.setAttribute('src', 'https://via.placeholder.com/200x200')
+        blockImage.setAttribute('src', 'https://via.placeholder.com/200x200/#E5EAEB')
         blockText.className = 'block__text'
         blockTextUp.textContent = 'sleeve spring suite'
         blockTextDown.textContent = '€864.00'
@@ -37,6 +37,45 @@ const buildBlocks = (blocks) => {
 }
 buildBlocks(blocks)
 console.log(buildBlocks(blocks))
+
+//create widgets
+
+let kitesurfTags = ['Kitesurf', 'Super', 'Duper', 'Theme', 'Women', 'Men', 'Equipment', 'Best', 'Accessories',
+    'Men',
+]
+let apparelTags = ['Apparel', 'Super', 'Duper', 'Theme', 'Responsive', 'Men', 'Women', 'Equipment', ]
+
+content = ''
+const makeSurfWidgets = () => {
+    kitesurfTags.forEach(tag => {
+        const diidiv = document.querySelector('.widget__items')
+        diidiv.innerHTML += `<div class='kitesurfTags'>
+                                ${tag}
+                                </div>`
+    });
+}
+makeSurfWidgets()
+
+
+
+const makeApparelWidgets = () => {
+    apparelTags.forEach(tag => {
+        const diidiv = document.querySelector('.widget__items')
+        diidiv.innerHTML += `<div class='apparelTags'>
+                                ${tag}
+                                </div>`
+    });
+
+}
+makeApparelWidgets()
+
+let first = document.querySelector('.widget__items > .apparelTags');
+first.style.backgroundColor = 'yellow'
+first.style.padding = '10px 40px'
+first.style.fontSize = '16px'
+first.style.fontWeight = 'bold'
+
+
 
 
 
