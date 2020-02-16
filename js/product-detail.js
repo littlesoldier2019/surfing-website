@@ -9,13 +9,17 @@ const reviewCloseBtn = document.getElementById("closeBtn");
 const reviewSendBtn = document.getElementById("modal__sendBtn");
 const sizeBtns = document.querySelector(".sizeBtns");
 const lengthBtns = document.querySelector(".lengthBtns");
+const quanInput = document.getElementById("quan__input");
 const addToCartBtn = document.getElementById("addToCartBtn");
+const wishListBtn = document.getElementById("wishList__btn");
+const compareBtn = document.getElementById("compare__btn");
 
 let cartItem = {
   product: "Peeky Cropped",
   size: null,
   length: null,
-  quan: null
+  quan: null,
+  price: 578.5
 };
 
 class UI {
@@ -116,9 +120,9 @@ class UI {
 
   static selectSize(e) {
     this.clearSize();
-    let userChoice = e.target;
-    userChoice.style.color = "orange";
-    cartItem.size = userChoice.textContent;
+    let userChoiceSize = e.target;
+    userChoiceSize.style.color = "orange";
+    cartItem.size = userChoiceSize.textContent;
   }
 
   static clearSize() {
@@ -130,9 +134,9 @@ class UI {
 
   static selectLength(e) {
     this.clearLength();
-    let userChoice = e.target;
-    userChoice.style.color = "orange";
-    cartItem.length = userChoice.textContent;
+    let userChoiceLength = e.target;
+    userChoiceLength.style.color = "orange";
+    cartItem.length = userChoiceLength.textContent;
   }
 
   static clearLength() {
@@ -142,15 +146,59 @@ class UI {
     cartItem.length = null;
   }
 
-  static cartValidation() {}
+  static selectQuan(e) {
+    this.clearQuan();
+    this.clearPrice();
+    let userChoiceQuan = e.target.value;
+    cartItem.quan = userChoiceQuan;
+    this.calPrice(userChoiceQuan);
+  }
+
+  static clearQuan() {
+    cartItem.quan = null;
+  }
+
+  static calPrice(userQuan) {
+    cartItem.price = 578.5 * userQuan;
+  }
+
+  static clearPrice() {
+    cartItem.price = null;
+  }
+
+  static cartValidation() {
+    if (
+      cartItem.size === null ||
+      cartItem.length === null ||
+      cartItem.quan === null
+    ) {
+      this.addeToCartAlert("Missing Information", "fail");
+    } else if (cartItem.size && cartItem.length && cartItem.quan) {
+      this.addeToCartAlert("Added!", "success");
+    }
+  }
 
   static addeToCartAlert(msg, type) {
-    addToCartBtn.innerHTML = msg;
+    addToCartBtn.textContent = msg;
     if (type === "success") {
-      addToCartBtn.style.backgroundColor = "#3ab31e";
+      console.log("Added!");
+      // addToCartBtn.style.backgroundColor = "#3ab31e";
     } else if (type === "fail") {
-      addToCartBtn.style.backgroundColor = "red";
+      console.log("Missing information");
+      // addToCartBtn.style.backgroundColor = "red";
     }
+  }
+
+  static showNumOfWishList() {
+    const wishList = Storage.getWishList();
+    const numOfWishItems = document.getElementById("numOfWishItems");
+    numOfWishItems.textContent = wishList.length;
+  }
+
+  static showNumOfCompareList() {
+    const compareList = Storage.getCompareList();
+    const numOfCompareItems = document.getElementById("numOfCompareItems");
+    numOfCompareItems.textContent = compareList.length;
   }
 
   static showAlert(msg, type) {
@@ -158,39 +206,89 @@ class UI {
   }
 }
 
-class storage {
+class Storage {
   // get the cart
+  static getCart() {
+    let cart;
+    if (localStorage.getItem("cart") === null) {
+      cart = [];
+    } else {
+      cart = JSON.parse(localStorage.getItem("cart"));
+    }
+    return cart;
+  }
+
   // add to the cart
+  static addToCart(item) {
+    const cart = Storage.getCart();
+    cart.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+
   // remove from the cart
+  static removeFromCart(item) {
+    const cart = Storage.getCart();
+
+    cart.forEach((cartitem, index) => {
+      if (
+        cartitem.product === item.name &&
+        cartitem.size === item.size &&
+        cartitem.length === item.length &&
+        cartitem.quan === item.quan
+      ) {
+        cart.splice(index, 1);
+      }
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+
   // get the wishlist
+  static getWishList() {
+    let wishList;
+    if (localStorage.getItem("wishList") === null) {
+      wishList = [];
+    } else {
+      wishList = JSON.parse(localStorage.getItem("wishList"));
+    }
+    return wishList;
+  }
+
   // add to the wishlist
-  // remove from the wishlist
+  static addToWishList(item) {
+    // TODO: if there is the same item,
+    // do not put into the compare list.
+
+    const wishList = Storage.getWishList();
+    wishList.push(item);
+    localStorage.setItem("wishList", JSON.stringify(wishList));
+  }
+
+  // TODO: remove from the wishlist
   // get the comparelist
+  static getCompareList() {
+    let compareList;
+    if (localStorage.getItem("compareList") === null) {
+      compareList = [];
+    } else {
+      compareList = JSON.parse(localStorage.getItem("compareList"));
+    }
+    return compareList;
+  }
+
   // add to the comparelist
-  // remove from the comparelist
+  static addToCompareList(item) {
+    // TODO: if there is the same item,
+    // do not put into the compare list.
+    const compareList = Storage.getCompareList();
+    compareList.push(item);
+    localStorage.setItem("compareList", JSON.stringify(compareList));
+  }
+
+  // TODO: remove from the comparelist
 }
 
-//Form
-
-// 4. Add to cart
-//- When click the button, all form information save to the local storage
-// TODO: localStorage
-// set the info to the local storage
-
-// TODO: localStorage
-// set the info the the local storage
-
-// 5. Add to wishList
-// 6. Add to compare
-// 7. Email to a friend
-
 //Event
-
-const quanInput = document.getElementById("quan__input");
-
-const wishListBtn = document.getElementById("wishList__btn");
-const compareBtn = document.getElementById("compare__btn");
-
 // When the webpage is loaded.
 document.addEventListener("DOMContentLoaded", () => {
   UI.moreInfoTab();
@@ -234,17 +332,37 @@ lengthBtns.addEventListener("click", e => {
 
 quanInput.addEventListener("change", e => {
   e.preventDefault();
-  console.log(e.target.value);
+  UI.selectQuan(e);
+  console.log(cartItem);
 });
 
 quanInput.addEventListener("keyup", e => {
   e.preventDefault();
-  console.log(e.target.value);
+  UI.selectQuan(e);
+  console.log(cartItem);
 });
 
 addToCartBtn.addEventListener("click", e => {
   e.preventDefault();
-  //show alert (success or failure)
-  UI.addeToCartAlert();
-  //store to local storage
+  // show alert (success or failure)
+  // need more work for the cartValidation method.
+  UI.cartValidation();
+  //store to the cart localStorage
+  Storage.addToCart(cartItem);
 });
+
+// TODO: Show alert "The item is already in the wishList"
+wishListBtn.addEventListener("click", e => {
+  e.preventDefault();
+  Storage.addToWishList(cartItem);
+  UI.showNumOfWishList();
+});
+
+// TODO: Show alert "The item is already in the compareList"
+compareBtn.addEventListener("click", e => {
+  e.preventDefault();
+  Storage.addToCompareList(cartItem);
+  UI.showNumOfCompareList();
+});
+
+// TODO: Main image slider

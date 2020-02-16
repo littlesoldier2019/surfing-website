@@ -406,6 +406,9 @@ header {
   color: #f5672f;
 }
 
+#addToCartBtn {
+  display: "inline-block";
+}
 
 /*ITEM MOREINFO TABS*/
 .item__moreInfo {
