@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Surfing</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <ul class="banner">
+                    <li class="bannerleft">
+                        <div class="bannerleft_icon"><img src="./img/surfhouse_logo.png" class="logo_img--size"></div>
+                        <div class="bannerleft_cart">
+                            <div class="bannerleft_cart--item1">
+                                <span class="bannerleft_cart--item1_login"><a class="login" href="#">LOG
+                                        IN</a></span><span class="bannerleft_cart--item1_wishlist"><a class="wishlist"
+                                        href="#"> WISH LIST(0)</a></span>
+                            </div>
+                            <div class="bannerleft_cart--item2">
+                                <div class="bannerleft_cart--item2--icon">
+                                    <a href="#"><img src="./img/icon_cart.png" class="cart_img--size"></a>
+                                </div>
+                                <div class="bannerleft_cart--item2--amt_itm"> <span class="bannerleft_cart--item2--amt">$1,459.50</span> <br><span class="bannerleft_cart--item2--itm"><a class="incart" href="">2 items
+                                        </a></span>
+                                </div>
+                                <div class="bannereft_cart--item2--ext_edt">
+                                    <span class="bannerleft_cart--item2_exit"><a class="x" href="">X</a></span><br><span class="bannerleft_cart--item2--edit"><a href="">EDIT</a></span</div>
+                                </div>
+                            </div>
+                            <div class="bannerleft_cart--item3">
+                                <span class="bannerleft_cart--item3_view"><a class="viewcart" href="#">VIEW
+                                        CART</a></span> <span class="bannerleft_cart--item3_chkout"><a class="checkout"
+                                        href="#"> CHECKOUT </a></span>
+                                </div>
+                                <div class="bannerleft_cart--item4">
+                                    <form class="bannerleft_cart--item4">
+                                        <input type="text" placeholder="SEARCH" name="search"><button type="submit"><i
+                                            class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="bannerleft_info">
+                                <p class="bannerleft_info--headtext"> WELCOME TO SURF HOUSE </p><br>
+                                <p class="bannerleft_info--subtext"> The only online store you will ever need for all your windsurfing and kitesurfing and SUP needs </p>
+                            </div>
+                    </li>
+                    <li class="bannercenter"></li>
+                    <li class="bannerRight">
+                        <div class="bannerRight_social">
+                            <div class="bannerRight_social--icon">
+                                <div class="bannerRight_social--icon_top">
+                                    <div class="facebook">
+                                        <a href="#"><img class="banner_top--icons" src="./img/facebook.svg"></a>
+                                    </div>
+                                </div>
+                                <div class="bannerRight_social--icon_top">
+                                    <div class="twitter">
+                                        <a href="#"><img class="banner_top--icons" src="./img/twitter.svg"></a>
+                                    </div>
+                                </div>
+                                <div class="bannerRight_social--icon_top">
+                                    <div class="youtube">
+                                        <a href="#"><img class="banner_top--icons" src="./img/youtube.svg"></a>
+                                    </div>
+                                </div>
+                                <div class="bannerRight_social--icon_top">
+                                    <div class="pinterest">
+                                        <a href="#"><img class="banner_top--icons" src="./img/pinterest (2).png"></a>
+                                    </div>
+                                </div>
+                                <div class="bannerRight_social--icon_top">
+                                    <div class="instagram">
+                                        <a href="#"><img class="banner_top--icons" src="./img/instagram.svg"></a>
+                                    </div>
+                                </div>
+                                <div class="bannerRight_select">
+                                    <div class="bannerRight_select--options"></div>
+                                    <select>
+                                        <option value="english ">EN</option>
+                                        <option value="finsih ">FI</option>
+                                        <option value="swedish ">SW</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_slide">
+                            <div class="banner_slide--Img">
+                                <div class="banner_slide--Imgcontent fade">
+                                    <div class="numbertext">1 / 3</div>
+                                    <img src="./img/slide1.png" style="width:100%"></img>
+                                    <!--<div class="text">Caption Text</div>-->
+                                </div>
+                                <div class="banner_slide--Imgcontent fade">
+                                    <div class="numbertext">2 / 3</div>
+                                    <img src="./img/slide2.jpg" style="width:100%"></img>
+                                    <!--<div class="text">Caption Text</div>-->
+                                </div>
+                                <div class="banner_slide--Imgcontent fade">
+                                    <div class="numbertext">3 / 3</div>
+                                    <img src="./img/slide3.png" style="width:100%"></img>
+                                    <!--<div class="text">Caption Text</div>-->
+                                </div>
+                                <div class="banner_slide--navImg">
+                                    <span><a><img class="banner_slide--navImg1" onclick="navSlides(-1)" src="./img/left-arrow.svg"></a></span><span><a><img class="banner_slide--navImg2" onclick="navSlides(1)" src="./img/right-arrow.svg"></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="thumbnailSlide(1)"></span>
+                            <span class="dot" onclick="thumbnailSlide(2)"></span>
+                            <span class="dot" onclick="thumbnailSlide(3)"></span>
+                        </div>
+
+                        <button class="btn_nav">BUY NOW</button>
+
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="container">
+                    <ul class="manu_product">
+                        <li class="menu">
+                            <h2 class="menu_text">Menu</h2>
+                            <ul class="menu_item">
+                                <li class="menu_item--head">
+                                    <li><a href="#">ABOUT</a></li>
+                                    <li><a href="#">APPAREL</a></li>
+                                    <li><a href="#">SURF APPAREL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">WINDAPPAREL</a></li>
+                                    <li><a href="#">KITESURF</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ACCESORIES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SALE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">BRAND</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">BLOG</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GADGETS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CONTACT</a>
+                                    </li>
+                            </ul>
+
+                            <div class="menu_item--1">
+                                <p>NOW IS OPEN!</p>
+                            </div>
+                            <div class="menu_item--tag">
+                                <p class="menu_item--tagtext">Tags Widgets</p>
+                                <button class="Kitesurf">Kitesurf</button>
+                                <button class="super">Super</button>
+                                <button class="duper">Duper</button>
+                                <button class="theme">Theme</button>
+                                <button class="men">Men</button>
+                                <button class="women">Women</button>
+                                <button class="equipement">Equipement</button>
+                                <button class="best">Best</button>
+                                <button class="accessories">Accessories</button>
+                                <button class="theme">Equipement</button>
+                                <button class="men">Men</button>
+                                <button class="apparel">Apparel</button>
+                                <button class="super">Super</button>
+                                <button class="duper">Duper</button>
+                                <button class="theme">Theme</button>
+                                <button class="women">Women</button>
+                                <button class="equipement">Equipement</button>
+
+                                <p class="menu_item--tags--subtext">View all Tags </p>
+                                <a href="#"><img class="menu_item--tagimg" src="./img/right.svg"></a>
+
+
+                            </div>
+                            <div class="menu_item--articles">
+                                <p class="menu_item--tagtext">Articles Expert </p>
+                                <p><a class="articles" href="#">
+                                    LG Spectrum review
+                                </a></p>
+
+                                <p> <a class="articles" href="#">Verizone Droid Xboard 8.2 and 10.1 review</a> </p>
+
+
+
+                                <p><a class="articles" href="#"> Man mini review (mid 2011)</a> </p>
+
+                                <a class="articles" href="#">
+                                    <p> Wacom Inkling review</p>
+                                </a>
+                                <a class="articles" href="#">
+                                    <p> Sonos play:3 review</p>
+                                </a>
+                                <a class="articles" href="#">
+                                    <p> HTC Radar 4G review</p>
+                                </a>
+                                <a class="articles" href="#">
+                                    <p> Canon powerShot S100 </p>
+                                </a>
+                                <a class="articles" href="#">
+                                    <p> Apple iMac</p>
+                                </a>
+                                <a class="articles" href="#">
+                                    <p> Sonos play:3 review</p>
+                                </a>
+                                <p class="menu_item--tags--subtext">View all Tags</p>
+                                <a href="#"><img class="menu_item--tagimg" src="./img/right.svg"></a>
+                            </div>
+                            </li>
+                            <ul class="newproducts">
+                                <li>
+                                    <div class="newproducts_header"><span class="newproducts_headertext"> NEW PRODUCTS </span>
+                                        <span class="newproducts_arrows"><span><a href=""><img class="newproducts_arrows--Img"
+                                                src="./img/left-arrow.svg"></a></span><span> <a href=""><img
+                                                class="newproducts_arrows--Img"
+                                                src="./img/right-arrow.svg"></a></span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="newproducts_content">
+                                        <div class="newproducts_items--1">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Single Thruster
+                                                2014</span> <span class="price">$ 850.00</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items--2">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Free Style Wave
+                                                FSW </span> <span class="price">$ 770.50</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> The White
+                                                Collection SURFBOARD 2013</span> <span class="price">$ 1580.70</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                </li>
+
+                                <li>
+                                    <div class="newproducts_content">
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Single Thruster
+                                                2014</span> <span class="price">$ 850.00</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Free Style Wave
+                                                FSW </span> <span class="price">$ 770.50</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> The White
+                                                Collection SURFBOARD 2013</span> <span class="price">$ 1580.70</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="newproducts_header2"><span class="newproducts_headertext">TOP PRODUCTS</span>
+                                        <span class="newproducts_arrows"><span><a href=""><img class="newproducts_arrows--Img"
+                                                src="./img/left-arrow.svg"></a></span><span> <a href=""><img
+                                                class="newproducts_arrows--Img"
+                                                src="./img/right-arrow.svg"></a></span></span>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="newproducts_content">
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Single Thruster
+                                                2014</span> <span class="price">$ 850.00</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Free Style Wave
+                                                FSW </span> <span class="price">$ 770.50</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> The White
+                                                Collection SURFBOARD 2013</span> <span class="price">$ 1580.70</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="newproducts_header2"><span class="newproducts_headertext">SALE PRODUCTS</span>
+                                        <span class="newproducts_arrows"><span><a href=""><img class="newproducts_arrows--Img"
+                                                src="./img/left-arrow.svg"></a></span><span> <a href=""><img
+                                                class="newproducts_arrows--Img"
+                                                src="./img/right-arrow.svg"></a></span></span>
+                                    </div>
+
+                                    <div class="newproducts_content">
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Single Thruster
+                                                2014</span> <span class="price">$ 850.00</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Free Style Wave
+                                                FSW </span> <span class="price">$ 770.50</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> The White
+                                                Collection SURFBOARD 2013</span> <span class="price">$ 1580.70</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="newproducts_content">
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Single Thruster
+                                                2014</span> <span class="price">$ 850.00</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Free Style Wave
+                                                FSW </span> <span class="price">$ 770.50</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> The White
+                                                Collection SURFBOARD 2013</span> <span class="price">$ 1580.70</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newproducts_content">
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Single Thruster
+                                                2014</span> <span class="price">$ 850.00</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> Free Style Wave
+                                                FSW </span> <span class="price">$ 770.50</span></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="newproducts_items">
+                                            <div class="newproducts_items--pholder"><span><img
+                                                class="newproducts_items--pholdImg"
+                                                src="./img/placeholder-img-2.jpg"></span>
+                                                <div class="newproducts_items--price"> <span class="product"> The White
+                                                Collection SURFBOARD 2013</span> <span class="price">$ 1580.70</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                    </ul>
+                    <div class="newproducts_content--brand">
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                        <div class="newproducts_content--branditem">BRAND<img class="newproducts_items--pholdImg" src="./img/images.png">
+                        </div>
+                    </div>
+
+                    <div class="surfhouse"><img class="newproducts_items--pholdImg" src="./img/instagram.svg" style="width: 30px;"> instagram feed: #surfhouse </div>
+
+                    <div class="newproducts_content--brand">
+                        <div class="instagram_feed"><img class="newproducts_items--pholdImg" src="./img/instagram/Livello_25.png">
+                        </div>
+                        <div class="instagram_feed"><img class="newproducts_items--pholdImg" src="./img/instagram/Livello_26.png">
+                        </div>
+                        <div class="instagram_feed"><img class="newproducts_items--pholdImg" src="./img/instagram/Livello_27.png">
+                        </div>
+                        <div class="instagram_feed"><img class="newproducts_items--pholdImg" src="./img/instagram/Livello_28.png">
+                        </div>
+                        <div class="instagram_feed"><img class="newproducts_items--pholdImg" src="./img/instagram/Livello_29.png">
+                        </div>
+                        <div class="instagram_feed"><img class="newproducts_items--pholdImg" src="./img/instagram/Livello_30.png">
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
