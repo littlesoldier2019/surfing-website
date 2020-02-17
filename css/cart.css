@@ -1,6 +1,14 @@
 .cart {
   display: flex;
   flex-direction: column; }
+  .cart__header {
+    background-color: #21D3FC;
+    padding: 13rem 0;
+    position: relative; }
+    .cart__header-logo {
+      position: absolute;
+      top: 10%;
+      left: 20%; }
   .cart__titles {
     padding: 0 6rem 0 4rem;
     display: flex;
@@ -284,7 +292,12 @@ body {
 
 .container {
   background-color: #F8F8F8;
-  max-width: 94rem; }
+  max-width: 132rem;
+  display: flex; }
+  .container__left {
+    width: 20%; }
+  .container__right {
+    width: 80%; }
 
 .page__breadcrumbs {
   display: flex;
@@ -409,3 +422,113 @@ body {
     width: 100%; }
   .row-member {
     padding: 2rem; } }
+
+.menu {
+  font-size: 20px;
+  text-decoration: none; }
+
+.menu_text {
+  color: white;
+  background: black;
+  padding-left: 50px; }
+
+ul.menu_item {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  list-style-type: none;
+  background: #21D3FC;
+  line-height: 1.1rem; }
+
+.menu_item li a {
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  display: block; }
+
+.menu_item li a:hover {
+  color: white;
+  background: black; }
+
+.menu_item--1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  background: #cfcbcb;
+  margin-top: 30px;
+  font-size: 55px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic; }
+
+.menu_item--tag {
+  background: white;
+  display: flex;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 15px; }
+
+.Kitesurf,
+.super,
+.men,
+.women,
+.apparel,
+.theme,
+.equipement,
+.duper,
+.best,
+.accessories {
+  background: #cfcbcb;
+  border-radius: 2px;
+  border: 1px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 12px;
+  /* margin-right: 10px; */
+  text-decoration: none;
+  margin: 5px; }
+
+.Kitesurf:hover,
+.super:hover,
+.men:hover .women:hover,
+.apparel:hover,
+.theme:hover,
+.equipement:hover,
+.duper:hover,
+.best:hover,
+.accessories:hover {
+  background: yellow; }
+
+.menu_item--tagtext {
+  font-size: 33px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.menu_item--tags--subtext {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold; }
+
+.menu_item--tagimg {
+  width: 32px;
+  margin-left: 10px; }
+
+.menu_item--articles {
+  line-height: 2rem;
+  background: white;
+  display: flex;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px; }
+
+.menu_item--articles--subtext {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold; }

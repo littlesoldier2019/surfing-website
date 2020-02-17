@@ -10,205 +10,223 @@
     <title>Cart Page</title>
 </head>
 <body>
-<div class="container">
-    <div class="page__breadcrumbs">
-        <div class="page__breadcrumbs--left">
-            <a href="#" class="breadcrumbs__link home__link">Home >></a>
-            <a href="#" class="breadcrumbs__link">Shopping Cart</a>
-        </div>
-        <div class="page__breadcrumbs--right">
-            <a href="" class="breadcrumbs__link"><< Back to the previous page</a>
-        </div>
+<header class="cart__header">
+    <div class="cart__header-logo">
+        <img src="../img/surfhouse_logo.png" alt="" class="cart__header-pic">
     </div>
-    <div class="cart">
-        <div class="cart__titles">
-            <div class="cart__title--item" data-target="#step-1" id="cart__title-shopping">
-                <div class="cart__title--number">1</div>
-                <div class="cart__title--text">Shopping Cart</div>
+</header>
+<div class="container">
+    <div class="container__left">
+            <div class="menu">
+                <h2 class="menu_text">Menu</h2>
+                <ul class="menu_item">
+                    <li class="menu_item--head">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">APPAREL</a></li>
+                    <li><a href="#">SURF APPAREL</a>
+                    </li>
+                    <li>
+                        <a href="#">WINDAPPAREL</a></li>
+                    <li><a href="#">KITESURF</a>
+                    </li>
+                    <li>
+                        <a href="#">ACCESORIES</a>
+                    </li>
+                    <li>
+                        <a href="#">SALE</a>
+                    </li>
+                    <li>
+                        <a href="#">BRAND</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#">GADGETS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+
+                <div class="menu_item--1">
+                    <p>NOW IS OPEN!</p>
+                </div>
+                <div class="menu_item--tag">
+                    <p class="menu_item--tagtext">Tags Widgets</p>
+                    <button class="Kitesurf">Kitesurf</button>
+                    <button class="super">Super</button>
+                    <button class="duper">Duper</button>
+                    <button class="theme">Theme</button>
+                    <button class="men">Men</button>
+                    <button class="women">Women</button>
+                    <button class="equipement">Equipement</button>
+                    <button class="best">Best</button>
+                    <button class="accessories">Accessories</button>
+                    <button class="theme">Equipement</button>
+                    <button class="men">Men</button>
+                    <button class="apparel">Apparel</button>
+                    <button class="super">Super</button>
+                    <button class="duper">Duper</button>
+                    <button class="theme">Theme</button>
+                    <button class="women">Women</button>
+                    <button class="equipement">Equipement</button>
+
+                    <p class="menu_item--tags--subtext">View all Tags </p>
+                    <a href="#"><img class="menu_item--tagimg" src="../img/right.svg"></a>
+
+
+                </div>
+                <div class="menu_item--articles">
+                    <p class="menu_item--tagtext">Articles Expert </p>
+                    <p><a class="articles" href="#">
+                        LG Spectrum review
+                    </a></p>
+
+                    <p> <a class="articles" href="#">Verizone Droid Xboard 8.2 and 10.1 review</a> </p>
+
+
+
+                    <p><a class="articles" href="#"> Man mini review (mid 2011)</a> </p>
+
+                    <a class="articles" href="#">
+                        <p> Wacom Inkling review</p>
+                    </a>
+                    <a class="articles" href="#">
+                        <p> Sonos play:3 review</p>
+                    </a>
+                    <a class="articles" href="#">
+                        <p> HTC Radar 4G review</p>
+                    </a>
+                    <a class="articles" href="#">
+                        <p> Canon powerShot S100 </p>
+                    </a>
+                    <a class="articles" href="#">
+                        <p> Apple iMac</p>
+                    </a>
+                    <a class="articles" href="#">
+                        <p> Sonos play:3 review</p>
+                    </a>
+                    <p class="menu_item--tags--subtext">View all Tags</p>
+                    <a href="#"><img class="menu_item--tagimg" src="../img/right.svg"></a>
+                </div>
             </div>
-            <div class="cart__title--item" data-target="#step-2" id="cart__title-checkout">
-                <div class="cart__title--number">2</div>
-                <div class="cart__title--text">Checkout</div>
+    </div>
+    <div class="container__right">
+        <div class="page__breadcrumbs">
+            <div class="page__breadcrumbs--left">
+                <a href="#" class="breadcrumbs__link home__link">Home >></a>
+                <a href="#" class="breadcrumbs__link">Shopping Cart</a>
             </div>
-            <div class="cart__title--item" data-target="#step-3" id="cart__title-confirm">
-                <div class="cart__title--number">3</div>
-                <div class="cart__title--text">Order Confirmation</div>
+            <div class="page__breadcrumbs--right">
+                <a href="" class="breadcrumbs__link"><< Back to the previous page</a>
             </div>
         </div>
-        <div class="page__contents">
-            <div class="cart__content content active" id="step-1">
-                <div class="cart__content--left table">
-                    <div class="table__titles">
-                        <div class="table__title table-none"></div>
-                        <div class="table__title">Product Name</div>
-                        <div class="table__title">Unit Price</div>
-                        <div class="table__title">QTY</div>
-                        <div class="table__title">Subtotal</div>
-                    </div>
-                    <div class="table__product">
-                        <div class="table__product--image table-none"></div>
-                        <div class="table__product--text desc">
-                            <div class="desc__title">Peeky Cropped</div>
-                            <div class="desc__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Accusamus amet, culpa dolorem enim eum fuga magni possimus quas tenetur voluptatem?
-                            </div>
-                            <div class="desc__icons">
-                                <div class="desc__icon">
-                                    <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png">
-                                </div>
-                                <div class="desc__icon">
-                                    <img src="https://img.icons8.com/material-sharp/24/000000/twitter-squared.png">
-                                </div>
-                                <div class="desc__icon">
-                                    <img src="https://img.icons8.com/ios/50/000000/pinterest.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table__price">
-                            <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
-                            <div class="table__price--number">749,50</div>
-                        </div>
-                        <div class="table__amount">
-                            <input class="table__input" type="number" placeholder="1">
-                        </div>
-                        <div class="table__total table__price">
-                            <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
-                            <div class="table__price--number">749,50</div>
-                            <div class="table__price--close">X</div>
-                        </div>
-                    </div>
-                    <div class="table__product">
-                        <div class="table__product--image table-none"></div>
-                        <div class="table__product--text desc">
-                            <div class="desc__title">OG Scallow Solid</div>
-                            <div class="desc__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Accusamus amet, culpa dolorem enim eum fuga magni possimus quas tenetur voluptatem?
-                            </div>
-                            <div class="desc__icons">
-                                <div class="desc__icon">
-                                    <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png">
-                                </div>
-                                <div class="desc__icon">
-                                    <img src="https://img.icons8.com/material-sharp/24/000000/twitter-squared.png">
-                                </div>
-                                <div class="desc__icon">
-                                    <img src="https://img.icons8.com/ios/50/000000/pinterest.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table__price">
-                            <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
-                            <div class="table__price--number">749,50</div>
-                        </div>
-                        <div class="table__amount">
-                            <input class="table__input" type="number" placeholder="1">
-                        </div>
-                        <div class="table__total table__price">
-                            <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
-                            <div class="table__price--number">749,50</div>
-                            <div class="table__price--close">X</div>
-                        </div>
-                    </div>
-                    <div class="table__last">
-                        <div class="table__last--left">
-                            <div class="table__last--coupon">Have you got a coupon code?</div>
-                            <input class="table__last--input" type="text" placeholder="Insert Code">
-                        </div>
-                        <div class="table__last--right">
-                            <div class="table__last-action">
-                                <button class="table__btn-update">Update shopping cart</button>
-                            </div>
-                            <div class="table__last-link">
-                                <a href="#" class="table__last--continue">or continue shopping</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="cart">
+            <div class="cart__titles">
+                <div class="cart__title--item" data-target="#step-1" id="cart__title-shopping">
+                    <div class="cart__title--number">1</div>
+                    <div class="cart__title--text">Shopping Cart</div>
                 </div>
-                <div class="cart__content--right total">
-                    <div class="total__title">Review Your Cart</div>
-                    <div class="total__row">
-                        <div class="total__subtitle">Your Cart</div>
-                        <div class="total__numbers">1399,50</div>
-                    </div>
-                    <div class="total__row">
-                        <div class="total__subtitle">Shipping</div>
-                        <div class="total__numbers">Free</div>
-                    </div>
-                    <div class="total__row">
-                        <div class="total__subtitle">Vat</div>
-                        <div class="total__numbers">112,20</div>
-                    </div>
-                    <div class="total__row">
-                        <div class="total__subtitle total__bold">Order total</div>
-                        <div class="total__numbers total__bold">1511,70</div>
-                    </div>
-                    <div class="total__action">
-                        <button class="total__btn">Checkout</button>
-                    </div>
+                <div class="cart__title--item" data-target="#step-2" id="cart__title-checkout">
+                    <div class="cart__title--number">2</div>
+                    <div class="cart__title--text">Checkout</div>
+                </div>
+                <div class="cart__title--item" data-target="#step-3" id="cart__title-confirm">
+                    <div class="cart__title--number">3</div>
+                    <div class="cart__title--text">Order Confirmation</div>
                 </div>
             </div>
-            <div class="content checkout__content checkout" id="step-2">
-                <div class="checkout__row checkout__row-first">
-                    <div class="checkout__row--item row-guest">
-                        <div class="checkout__row__main-title">
-                            Continue as a
-                            <div class="checkout__row__bold-title">Guest!</div>
+            <div class="page__contents">
+                <div class="cart__content content active" id="step-1">
+                    <div class="cart__content--left table">
+                        <div class="table__titles">
+                            <div class="table__title table-none"></div>
+                            <div class="table__title">Product Name</div>
+                            <div class="table__title">Unit Price</div>
+                            <div class="table__title">QTY</div>
+                            <div class="table__title">Subtotal</div>
                         </div>
-                        <div class="row-guest__about-info">
-                            Register with us for future convenience: </div>
-                        <div class="row-guest__about-info row-guest__bold">
-                            You can save your data in order to speed up your next shopping experience
-                        </div>
-
-                        <div class="row-guest__checkbox-container">
-                            <div class="row-guest__checkbox-group">
-                                <input type="checkbox" class="row-guest__checkout" id="checkout1">
-                                <label for="checkout1" class="row-guest__checkbox-label">Checkout as a guest</label>
+                        <div class="table__product">
+                            <div class="table__product--image table-none"></div>
+                            <div class="table__product--text desc">
+                                <div class="desc__title">Peeky Cropped</div>
+                                <div class="desc__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus amet, culpa dolorem enim eum fuga magni possimus quas tenetur voluptatem?
+                                </div>
+                                <div class="desc__icons">
+                                    <div class="desc__icon">
+                                        <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png">
+                                    </div>
+                                    <div class="desc__icon">
+                                        <img src="https://img.icons8.com/material-sharp/24/000000/twitter-squared.png">
+                                    </div>
+                                    <div class="desc__icon">
+                                        <img src="https://img.icons8.com/ios/50/000000/pinterest.png">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row-guest__checkbox-group">
-                                <input type="checkbox" class="row-guest__register" id="register1">
-                                <label for="register1" class="row-guest__checkbox-label">Register</label>
+                            <div class="table__price">
+                                <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                                <div class="table__price--number">749,50</div>
+                            </div>
+                            <div class="table__amount">
+                                <input class="table__input" type="number" placeholder="1">
+                            </div>
+                            <div class="table__total table__price">
+                                <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                                <div class="table__price--number">749,50</div>
+                                <div class="table__price--close">X</div>
                             </div>
                         </div>
-                        <div class="row-guest__list">
-                            <div class="row-guest__list--title">Register and save time!</div>
-                            <div class="row-guest__list--subtitle">Register with us for future convenience</div>
-                            <ul class="row-guest__main-list">
-                                <li class="row-guest__main-list--item">Fast and easy check out</li>
-                                <li class="row-guest__main-list--item">Easy access to your order history and status</li>
-                            </ul>
+                        <div class="table__product">
+                            <div class="table__product--image table-none"></div>
+                            <div class="table__product--text desc">
+                                <div class="desc__title">OG Scallow Solid</div>
+                                <div class="desc__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusamus amet, culpa dolorem enim eum fuga magni possimus quas tenetur voluptatem?
+                                </div>
+                                <div class="desc__icons">
+                                    <div class="desc__icon">
+                                        <img src="https://img.icons8.com/material-sharp/24/000000/facebook-f.png">
+                                    </div>
+                                    <div class="desc__icon">
+                                        <img src="https://img.icons8.com/material-sharp/24/000000/twitter-squared.png">
+                                    </div>
+                                    <div class="desc__icon">
+                                        <img src="https://img.icons8.com/ios/50/000000/pinterest.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__price">
+                                <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                                <div class="table__price--number">749,50</div>
+                            </div>
+                            <div class="table__amount">
+                                <input class="table__input" type="number" placeholder="1">
+                            </div>
+                            <div class="table__total table__price">
+                                <div class="table__price--img"><img src="https://img.icons8.com/small/16/000000/euro-pound-exchange.png"></div>
+                                <div class="table__price--number">749,50</div>
+                                <div class="table__price--close">X</div>
+                            </div>
                         </div>
-                        <div class="row-guest__action">
-                            <button class="row-guest__btn">Fill the sign form</button>
+                        <div class="table__last">
+                            <div class="table__last--left">
+                                <div class="table__last--coupon">Have you got a coupon code?</div>
+                                <input class="table__last--input" type="text" placeholder="Insert Code">
+                            </div>
+                            <div class="table__last--right">
+                                <div class="table__last-action">
+                                    <button class="table__btn-update">Update shopping cart</button>
+                                </div>
+                                <div class="table__last-link">
+                                    <a href="#" class="table__last--continue">or continue shopping</a>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
-                    <div class="checkout__row--item row-member">
-                        <div class="checkout__row__main-title">
-                            Are you a
-                            <div class="checkout__row__bold-title">Member?</div>
-                        </div>
-                        <div class="row-member__title row-guest__list--title">Already registered?</div>
-                        <div class="row-member__subtitle row-guest__list--subtitle">Please log in below:</div>
-                        <form class="row-member__form">
-                            <div class="row-member__group">
-                                <label class="row-member__label">Email Address <span class="row-member__red">*</span></label>
-                                <input type="text" class="row-member__input" required>
-                            </div>
-                            <div class="row-member__group">
-                                <label class="row-member__label">Password<span class="row-member__red">*</span></label>
-                                <input type="password" class="row-member__input" required>
-                            </div>
-                            <div class="row-member__password">
-                                <div class="row-member__required">*Required fields</div>
-                                <a class="row-member__passnumber" href="#">Forgot your password?</a>
-                            </div>
-                            <div class="row-member__action">
-                                <button class="row-member__btn row-guest__btn">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="checkout__row--item total">
+                    <div class="cart__content--right total">
                         <div class="total__title">Review Your Cart</div>
                         <div class="total__row">
                             <div class="total__subtitle">Your Cart</div>
@@ -231,141 +249,227 @@
                         </div>
                     </div>
                 </div>
+                <div class="content checkout__content checkout" id="step-2">
+                    <div class="checkout__row checkout__row-first">
+                        <div class="checkout__row--item row-guest">
+                            <div class="checkout__row__main-title">
+                                Continue as a
+                                <div class="checkout__row__bold-title">Guest!</div>
+                            </div>
+                            <div class="row-guest__about-info">
+                                Register with us for future convenience: </div>
+                            <div class="row-guest__about-info row-guest__bold">
+                                You can save your data in order to speed up your next shopping experience
+                            </div>
 
-            </div>
-            <div class="content confirm" id="step-3">
-                <div class="checkout__row">
-                    <form class="delivery-form">
-                        <div class="delivery-form__left">
-                            <div class="delivery-form__title">Your shipping information</div>
-                            <div class="delivery-form__container">
-                                <div class="delivery-form__first">
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Email*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="e.g name@email.com" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">First Name*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="firstname" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Last Name*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="lastname" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Company</label>
-                                        <input type="text" class="delivery-form__input" placeholder="e.g your company(optional)">
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Address*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="Address line 1" required>
-                                        <input type="text" class="delivery-form__input" placeholder="Address line 2" required>
-                                    </div>
+                            <div class="row-guest__checkbox-container">
+                                <div class="row-guest__checkbox-group">
+                                    <input type="checkbox" class="row-guest__checkout" id="checkout1">
+                                    <label for="checkout1" class="row-guest__checkbox-label">Checkout as a guest</label>
                                 </div>
-                                <div class="delivery-form__second">
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Postal Code*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="e.g 201000" required>
+                                <div class="row-guest__checkbox-group">
+                                    <input type="checkbox" class="row-guest__register" id="register1">
+                                    <label for="register1" class="row-guest__checkbox-label">Register</label>
+                                </div>
+                            </div>
+                            <div class="row-guest__list">
+                                <div class="row-guest__list--title">Register and save time!</div>
+                                <div class="row-guest__list--subtitle">Register with us for future convenience</div>
+                                <ul class="row-guest__main-list">
+                                    <li class="row-guest__main-list--item">Fast and easy check out</li>
+                                    <li class="row-guest__main-list--item">Easy access to your order history and status</li>
+                                </ul>
+                            </div>
+                            <div class="row-guest__action">
+                                <button class="row-guest__btn">Fill the sign form</button>
+                            </div>
+
+                        </div>
+                        <div class="checkout__row--item row-member">
+                            <div class="checkout__row__main-title">
+                                Are you a
+                                <div class="checkout__row__bold-title">Member?</div>
+                            </div>
+                            <div class="row-member__title row-guest__list--title">Already registered?</div>
+                            <div class="row-member__subtitle row-guest__list--subtitle">Please log in below:</div>
+                            <form class="row-member__form">
+                                <div class="row-member__group">
+                                    <label class="row-member__label">Email Address <span class="row-member__red">*</span></label>
+                                    <input type="text" class="row-member__input" required>
+                                </div>
+                                <div class="row-member__group">
+                                    <label class="row-member__label">Password<span class="row-member__red">*</span></label>
+                                    <input type="password" class="row-member__input" required>
+                                </div>
+                                <div class="row-member__password">
+                                    <div class="row-member__required">*Required fields</div>
+                                    <a class="row-member__passnumber" href="#">Forgot your password?</a>
+                                </div>
+                                <div class="row-member__action">
+                                    <button class="row-member__btn row-guest__btn">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="checkout__row--item total">
+                            <div class="total__title">Review Your Cart</div>
+                            <div class="total__row">
+                                <div class="total__subtitle">Your Cart</div>
+                                <div class="total__numbers">1399,50</div>
+                            </div>
+                            <div class="total__row">
+                                <div class="total__subtitle">Shipping</div>
+                                <div class="total__numbers">Free</div>
+                            </div>
+                            <div class="total__row">
+                                <div class="total__subtitle">Vat</div>
+                                <div class="total__numbers">112,20</div>
+                            </div>
+                            <div class="total__row">
+                                <div class="total__subtitle total__bold">Order total</div>
+                                <div class="total__numbers total__bold">1511,70</div>
+                            </div>
+                            <div class="total__action">
+                                <button class="total__btn">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content confirm" id="step-3">
+                    <div class="checkout__row">
+                        <form class="delivery-form">
+                            <div class="delivery-form__left">
+                                <div class="delivery-form__title">Your shipping information</div>
+                                <div class="delivery-form__container">
+                                    <div class="delivery-form__first">
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Email*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="e.g name@email.com" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">First Name*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="firstname" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Last Name*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="lastname" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Company</label>
+                                            <input type="text" class="delivery-form__input" placeholder="e.g your company(optional)">
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Address*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="Address line 1" required>
+                                            <input type="text" class="delivery-form__input" placeholder="Address line 2" required>
+                                        </div>
                                     </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Town/City*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="e.g Los Angeles" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label" for="state-select">Country*</label>
-                                        <select name="state-select" id="state-select" class="delivery-form__select">
-                                            <option value="Finland" class="delivery-form__option">Finland</option>
-                                            <option value="Sweden" class="delivery-form__option">Sweden</option>
-                                            <option value="Denmark" class="delivery-form__option">Denmark</option>
-                                            <option value="Norway" class="delivery-form__option">Norway</option>
-                                            <option value="Germany" class="delivery-form__option">Germany</option>
-                                        </select>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Mobile*</label>
-                                        <div class="delivery-form__phone-group">
-                                            <input type="number" class="delivery-form__input delivery-form__code-phone" placeholder="+39" required>
-                                            <input type="number" class="delivery-form__input" placeholder="phone" required>
+                                    <div class="delivery-form__second">
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Postal Code*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="e.g 201000" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Town/City*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="e.g Los Angeles" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label" for="state-select">Country*</label>
+                                            <select name="state-select" id="state-select" class="delivery-form__select">
+                                                <option value="Finland" class="delivery-form__option">Finland</option>
+                                                <option value="Sweden" class="delivery-form__option">Sweden</option>
+                                                <option value="Denmark" class="delivery-form__option">Denmark</option>
+                                                <option value="Norway" class="delivery-form__option">Norway</option>
+                                                <option value="Germany" class="delivery-form__option">Germany</option>
+                                            </select>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Mobile*</label>
+                                            <div class="delivery-form__phone-group">
+                                                <input type="number" class="delivery-form__input delivery-form__code-phone" placeholder="+39" required>
+                                                <input type="number" class="delivery-form__input" placeholder="phone" required>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="delivery-form__checkboxes">
-                                <div class="delivery-form__form-group checkbox__group">
-                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
-                                    <label class="delivery-form__label checkbox__label">Billing address the same as shipping</label>
+                                <div class="delivery-form__checkboxes">
+                                    <div class="delivery-form__form-group checkbox__group">
+                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                        <label class="delivery-form__label checkbox__label">Billing address the same as shipping</label>
+                                    </div>
+                                    <div class="delivery-form__form-group checkbox__group">
+                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                        <label class="delivery-form__label checkbox__label">Remember this address next time</label>
+                                    </div>
                                 </div>
-                                <div class="delivery-form__form-group checkbox__group">
-                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
-                                    <label class="delivery-form__label checkbox__label">Remember this address next time</label>
-                                </div>
+                                <div class="delivery-form__text">By clicking "Place my order", you agree to our Terms of Use and privacy Policy, including the transfer of your personal information to Italy, a jurisdiction that may not provide an equivalent level of data protection to the laws in your home country</div>
                             </div>
-                            <div class="delivery-form__text">By clicking "Place my order", you agree to our Terms of Use and privacy Policy, including the transfer of your personal information to Italy, a jurisdiction that may not provide an equivalent level of data protection to the laws in your home country</div>
-                        </div>
-                        <div class="delivery-form__right payment-details">
-                            <div class="delivery-form__title">Your payment details</div>
-                            <div class="delivery-form__container payment__container">
-                                <div class="delivery-form__first">
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Email*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="e.g name@email.com" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Full Name*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="firstname" required>
-                                        <input type="text" class="delivery-form__input" placeholder="lastname" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Company</label>
-                                        <input type="text" class="delivery-form__input" placeholder="e.g your company(optional)">
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Address*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="Address line 1" required>
-                                        <input type="text" class="delivery-form__input" placeholder="Address line 2" required>
-                                    </div>
+                            <div class="delivery-form__right payment-details">
+                                <div class="delivery-form__title">Your payment details</div>
+                                <div class="delivery-form__container payment__container">
+                                    <div class="delivery-form__first">
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Email*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="e.g name@email.com" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Full Name*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="firstname" required>
+                                            <input type="text" class="delivery-form__input" placeholder="lastname" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Company</label>
+                                            <input type="text" class="delivery-form__input" placeholder="e.g your company(optional)">
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Address*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="Address line 1" required>
+                                            <input type="text" class="delivery-form__input" placeholder="Address line 2" required>
+                                        </div>
 
-                                </div>
-                                <div class="delivery-form__second">
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Credit Card Number*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="type your credit card number" required>
                                     </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Expiration Date*</label>
-                                        <input type="date" class="delivery-form__input" required>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Secure Code(CCV)*</label>
-                                        <input type="text" class="delivery-form__input" placeholder="000" required>
-                                        <span class="delivery-form__tip">What is this?</span>
-                                    </div>
-                                    <div class="delivery-form__form-group">
-                                        <label class="delivery-form__label">Name on Card</label>
-                                        <input type="text" class="delivery-form__input" placeholder="name on card" required>
-                                    </div>
+                                    <div class="delivery-form__second">
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Credit Card Number*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="type your credit card number" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Expiration Date*</label>
+                                            <input type="date" class="delivery-form__input" required>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Secure Code(CCV)*</label>
+                                            <input type="text" class="delivery-form__input" placeholder="000" required>
+                                            <span class="delivery-form__tip">What is this?</span>
+                                        </div>
+                                        <div class="delivery-form__form-group">
+                                            <label class="delivery-form__label">Name on Card</label>
+                                            <input type="text" class="delivery-form__input" placeholder="name on card" required>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                <div class="delivery-form__checkboxes">
+                                    <div class="delivery-form__form-group checkbox__group">
+                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                        <label class="delivery-form__label checkbox__label">Billing address the same as shipping</label>
+                                    </div>
+                                    <div class="delivery-form__form-group checkbox__group">
+                                        <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
+                                        <label class="delivery-form__label checkbox__label">Remember this card info next time</label>
+                                    </div>
+                                </div>
+                                <div class="delivery-form__action">
+                                    <button class="delivery-form__btn">Place Order</button>
                                 </div>
                             </div>
-                            <div class="delivery-form__checkboxes">
-                                <div class="delivery-form__form-group checkbox__group">
-                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
-                                    <label class="delivery-form__label checkbox__label">Billing address the same as shipping</label>
-                                </div>
-                                <div class="delivery-form__form-group checkbox__group">
-                                    <input type="checkbox" class="delivery-form__checkbox delivery-form__input checkbox__input">
-                                    <label class="delivery-form__label checkbox__label">Remember this card info next time</label>
-                                </div>
-                            </div>
-                            <div class="delivery-form__action">
-                                <button class="delivery-form__btn">Place Order</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 <script src="../js/cart.js"></script>
 </body>

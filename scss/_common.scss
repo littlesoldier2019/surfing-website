@@ -19,7 +19,15 @@ body {
 
 .container {
   background-color: $body-color;
-  max-width: 94rem;
+  max-width: 132rem;
+  display: flex;
+  &__left {
+    width: 20%;
+  }
+  &__right {
+    width: 80%;
+  }
+
 }
 
 .page {
