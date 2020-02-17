@@ -12,3 +12,25 @@ for(let i = 0; i<buttons.length; i++) {
     })
 
 }
+
+const inputs = document.querySelectorAll('.table__input');
+let totalNumbers = document.querySelectorAll('.total__numbers');
+let itemValue = document.querySelector('.table__price--number').textContent;
+let inputValue = document.querySelector('.table__input').value;
+inputs.forEach((input) => {
+    if(inputValue < 0 ) {
+        alert('Enter a positive number');
+    } else {
+        input.addEventListener('input', () => {
+            let sum = parseInt(itemValue) * inputValue;
+            totalNumbers.forEach((item) => {
+                item.textContent = sum;
+            })
+
+
+        });
+    }
+
+
+
+});
