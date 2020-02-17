@@ -1,0 +1,26 @@
+{
+  "name": "surfing-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss css/cart.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaeahpark/surfing-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaeahpark/surfing-website/issues"
+  },
+  "homepage": "https://github.com/chaeahpark/surfing-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0"
+  }
+}
