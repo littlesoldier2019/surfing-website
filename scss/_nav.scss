@@ -1,7 +1,7 @@
+/* NAV BAR */
 .nav {
-  border: 2px solid orange;
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -11,45 +11,39 @@
   padding-left: 0;
   display: grid;
   grid-template-columns: repeat(7, auto);
-  // justify-items: center;
   justify-content: start;
   align-items: center;
   list-style-type: none;
-  font-size: $normalText;
-
-  &--li {
-    a {
-      display: block;
-      padding-right: .5rem;
-      padding-left: .5rem;
-      text-decoration: none;
-      text-align: center;
-      font-size: $normalText;
-      color: $greyText;
-      cursor: pointer;
-    }
-  }
-
-  .nav__category--li: hover {}
-
-  &--arrow {
-    font-size: $normalText;
-    color: $greyText;
-  }
+  font-size: 14px;
 }
 
+.nav__category--li a {
+  display: block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
+  cursor: pointer;
+}
+
+.nav__category--arrow {
+  font-size: 14px;
+  color: #999999;
+}
 
 .nav__previous {
   display: grid;
   justify-content: end;
+}
 
-  p {
-    font-size: $normalText;
-    color: $greyText;
+.nav__previous p {
+  font-size: 14px;
+  color: #999999;
+}
 
-    a {
-      text-decoration: none;
-      color: $greyText;
-    }
-  }
+.nav__previous p a {
+  text-decoration: none;
+  color: #999999;
 }
