@@ -19,7 +19,7 @@ body {
 
 .container {
   background-color: $body-color;
-  max-width: 132rem;
+  max-width: 100%;
   display: flex;
   &__left {
     width: 20%;
