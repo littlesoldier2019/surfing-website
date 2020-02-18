@@ -3,16 +3,16 @@ showSlides(slideIndex);*/
 
 
 //================ Next/previous controls =============
-/*function navSlides(n) {
-    showSlides(slideIndex += n);
-}*/
+// function navSlides(n) {
+//     showSlides(slideIndex += n);
+// }
 
 
 //================ Thumbnail image controls ===========
 
-/*function thumbnailSlide(n) {
-    showSlides(slideIndex = n);
-}*/
+// function thumbnailSlide(n) {
+//     showSlides(slideIndex = n);
+// }
 
 
 /*function showSlides(n) {
@@ -43,7 +43,9 @@ function showSlides() {
         slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
     for (i = 0; i < rectangle.length; i++) {
         rectangle[i].className = rectangle[i].className.replace(" active", "");
     }
