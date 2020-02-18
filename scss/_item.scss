@@ -1,0 +1,173 @@
+/* ITEM SECTION DETAILS */
+.item__main-img {
+  margin-bottom: 1rem;
+}
+
+.item__slider--btn {
+  color: #5d5e5e;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.checked {
+  color: orange;
+}
+
+#rating__star {
+  margin-right: 1rem;
+}
+
+#rating__counter {
+  margin: 0;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+#addReview__btn {
+  margin: 0;
+  cursor: pointer;
+}
+
+#addReview__btn a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.availability {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.availability__price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.availability__inStock {
+  text-align: right;
+}
+
+.availability__inStock--bold {
+  font-weight: bold;
+}
+
+
+/* ITEM DESCRIPTION */
+
+.description {
+  border-top: 1px solid grey;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.description__title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.description__info {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.description__btns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+}
+
+.size,
+.length {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: white;
+  text-align: center;
+}
+
+.size:hover,
+.length:hover {
+  color: #f5672f;
+}
+
+.description__cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description__cart .quan,
+.description__cart .addToCartBtn,
+.description__cart .otherBtns {
+  margin-left: 0.5rem;
+}
+
+.description__cart .quan {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.description__cart .quan__title {
+  margin: 0;
+}
+
+.description__cart .quan__input {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.description__cart .quan__input::-webkit-inner-spin-button,
+.description__cart .quan__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.description__cart .btn {
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.description__cart .btn--orange {
+  padding: 1rem 0.7rem;
+  background-color: #f5672f;
+  color: white;
+  font-size: 18px;
+}
+
+.description__cart .otherBtns {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__cart .btn--plain {
+  padding: 0;
+  margin-bottom: 0.2rem;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.description__cart .btn--plain:hover {
+  color: #f5672f;
+}
+
+#addToCartBtn {
+  display: "inline-block";
+}

@@ -1,0 +1,101 @@
+/* MODAL TO ADD REVIEWS */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: .5rem;
+}
+
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 1.8rem;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.review__header {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.review__product {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#required {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.review__title {
+  font-weight: bold;
+}
+
+.star {
+  color: goldenrod;
+  font-size: 2rem;
+  padding: 0.1rem;
+  /* space out the stars */
+}
+
+.star::before {
+  content: '\2606';
+  /* star outline */
+  cursor: pointer;
+}
+
+.star.rated::before {
+  /* the style for a selected star */
+  content: '\2605';
+  /* filled star */
+}
+
+.review__stars {
+  font-size: 1rem;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#customerReviewContent {
+  height: 150px;
+  text-align: justify;
+  overflow: auto;
+  font-family: Roboto, Railway;
+}
+
+#modal__sendBtn {
+  background-color: #21D3FC;
+  color: white;
+  border: none;
+  padding: .7rem .5rem;
+  margin-top: 1rem;
+}
+
+/* ------------------------ */
+/* MODAL TO ADD REVIEWS ENDS*/
