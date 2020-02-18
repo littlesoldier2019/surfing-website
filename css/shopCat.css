@@ -1,0 +1,500 @@
+:root {
+    --sidebar-bg-color: #21D3FC;
+    --greyish-bg-color: rgb(229, 234, 235);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', Raleway;
+    background-color: #F8F8F8;
+    font-size: 14px;
+}
+
+.eshopCat__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+/************ shop-cat-header ***************/
+.header__wrapper {
+    background-color: #ACEBFA;
+}
+
+.container {
+    width: 2000px;
+    margin: 0 auto;
+}
+
+.eshopCat__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header__left {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    width: 40%;
+    margin-right: 15px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 30px;
+}
+
+.header__logo>img {
+    padding: 20px;
+    padding-left: 150px;
+}
+
+.header__cart {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.bannerleft {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerleft_icon {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.bannerleft_cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerleft_cart--item1 {
+    display: flex;
+    color: red;
+}
+
+
+/* Removing the default links*/
+
+.login,
+.wishlist {
+    color: red;
+}
+
+.x,
+.incart {
+    color: yellow;
+}
+
+.viewcart,
+.checkout {
+    color: white;
+}
+
+.articles {
+    color: black;
+}
+
+.bannerleft_cart--item1_login,
+.bannerleft_cart--item1_wishlist {
+    width: 50%;
+    padding: 5px;
+    background: #F8F8F8;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bannerleft_cart--item2 {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(223, 88, 34);
+}
+
+.bannerleft_cart--item2--icon {
+    width: 10%;
+    padding: 12px;
+}
+
+.bannerleft_cart--item2--amt_itm {
+    padding: 12px;
+}
+
+.bannerleft_cart--item2--amt {
+    color: white;
+}
+
+.bannereft_cart--item2--ext_edt {
+    padding: 12px;
+}
+
+.bannerleft_cart--item2_exit {
+    margin-left: 11px;
+    color: yellow;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bannerleft_cart--item2--edit {
+    color: black;
+}
+
+.bannerleft_cart--item3 {
+    display: flex;
+    color: white;
+}
+
+.bannerleft_cart--item3_view {
+    width: 50%;
+    padding: 5px;
+    background: rgb(163, 53, 9);
+    font-size: 14px;
+    text-align: center;
+}
+
+.bannerleft_cart--item3_chkout {
+    text-decoration: none;
+    width: 50%;
+    padding: 5px;
+    background: rgb(196, 84, 40);
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 89%;
+    background: #f1f1f1;
+}
+
+.fa-search {
+    border: black;
+    float: left;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+
+
+.header__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials i {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#choose__lang {
+    font-size: 16px;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    margin-left: 10px;
+    outline: red;
+}
+
+.grid__breadcrumbs {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px 10px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+/* select each breadcrumb item which is not the last one of that type, therefore sellecting all but the last. Then add pseudo class with ::after for the arrow */
+.breadcrumbs__item:not(:last-of-type)::after {
+    content: '>>';
+    margin: 0 5px;
+    color: #cccccc;
+}
+
+.breadcrumbs__link {
+    text-decoration: none;
+    color: #999999;
+}
+
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    background-color: yellow;
+    padding: 5px;
+}
+
+/************* shop-cat-grid *************/
+
+.eshopCat__main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*      sidebar      */
+.eshopCat__sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 130px;
+    margin-right: 10px;
+}
+
+.eshopCat__sidebar>div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar__list {
+    width: 150px;
+    background-color: var(--sidebar-bg-color);
+}
+
+.sidebar__menuList {
+    list-style-type: none;
+    width: 100%;
+
+}
+
+.sidebar__menuItem {
+    font-weight: bold;
+    padding: 8px 0px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.sidebar__menuItem a {
+    display: block;
+    text-decoration: none;
+    padding: 10px auto;
+
+}
+
+.sidebar__menuItem:first-child {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar__menuItem:hover {
+    background-color: #000;
+    color: white;
+}
+
+.sidebar__menuItem.active {
+    background-color: #000;
+    color: white;
+}
+
+.sidebar__tagsWidget {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.sidebar__tagsWidget h2 {
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 20px 25px;
+}
+
+.widget__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget__items>div {
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--greyish-bg-color);
+}
+
+/* .kitesurfTags:first-child {
+    font-size: 16px;
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px 40px;
+} */
+
+.widget__items>div:hover {
+    font-size: 16px;
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px 40px;
+}
+
+#viewAllTags {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar__open-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin: 20px auto;
+    background-color: var(--greyish-bg-color)
+}
+
+.sidebar__open-now>p {
+    text-align: right;
+    padding-right: 30px;
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.open-now__now {
+    margin-top: 100px;
+}
+
+.open-now__open {
+    margin-bottom: 50px;
+}
+
+/*      grid     */
+
+.eshopCat__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 10px;
+    margin-right: 130px;
+}
+
+.grid__filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.filterTop__sort>select {
+    margin: 0 8px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-overflow: '';
+    border-radius: 0;
+}
+
+.viewAs__thumbnail {
+    margin: 0 10px;
+    margin-bottom: -3px;
+}
+
+.viewAs__viewlist {
+    margin-bottom: -3px;
+}
+
+.filterTop__show>input {
+    width: 60px;
+    margin: 0 8px;
+}
+
+.fa-chevron-down {
+    margin-left: -22px;
+    margin-right: 10px;
+    font-size: 10px;
+    color: gray;
+}
+
+.filterTop__pageNum .pageNum__btn {
+    border: none;
+    background: transparent;
+}
+
+.filterTop__pageNum .pageNum__btn--current {
+    margin: 0 5px;
+    /* font-size: 16px; */
+    background-color: #21D3FC;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+.filterTop__pageNum .pageNum__arrow--right {
+    height: 8px;
+    width: 8px;
+}
+
+.grid__display {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+.display__block {
+    background-color: var(--greyish-bg-color);
+}
+
+.display__block {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 185px;
+    text-align: center;
+    /* align-items: center; */
+    background-color: white;
+    border: 5px solid white;
+}
+
+.block__text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font: italic bold 12px roboto;
+}
+
+.display__text--down2 {
+    margin: 0;
+    text-align: right;
+    color: red;
+    font-size: 10px;
+}
