@@ -172,21 +172,21 @@ h5 {
   background-color: lightgrey;
 }
 
-label {
+.contact-form label {
   font-weight: bold;
   text-transform: uppercase;
   }
   
-input {
+.contact-form input {
     width: 100%;
     margin: .3rem 0 1rem 0;
   }
   
-textarea {
+.contact-form textarea {
     width: 100%;
   }
   
-button {
+.contact-form button {
   border-radius: 3px;
   background-color: lightgrey;
   padding: 0.5rem 1rem;
@@ -194,12 +194,12 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+.contact-form button:hover {
   background-color: grey;
   cursor: pointer;;
 }
 
-button:active {
+.contact-form button:active {
   background-color: #9A9A9A;
 }
 
