@@ -29,6 +29,10 @@ body {
     /* background: #ACEBFA;*/
 }
 
+.header {
+    background: #ACEBFA;
+}
+
 .container {
     width: 1320px;
     margin: 0 auto;
