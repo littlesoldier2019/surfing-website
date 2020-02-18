@@ -1,0 +1,742 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #F8F8F8;
+    color: #000;
+    font-family: Inter, Arial, sans-serif, 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    min-height: auto;
+    /* background: #ACEBFA;*/
+}
+
+.header {
+    background: #ACEBFA;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+ul.banner {
+    text-decoration: none;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    background: #ACEBFA;
+}
+
+.bannerleft {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerleft_icon {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.bannerleft_cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerleft_cart--item1 {
+    display: flex;
+    color: red;
+}
+
+
+/* Removing the default links*/
+
+.login,
+.wishlist {
+    color: red;
+}
+
+.x,
+.incart {
+    color: yellow;
+}
+
+.viewcart,
+.checkout {
+    color: white;
+}
+
+.articles {
+    color: black;
+}
+
+.bannerleft_cart--item1_login,
+.bannerleft_cart--item1_wishlist {
+    width: 50%;
+    padding: 5px;
+    background: #F8F8F8;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bannerleft_cart--item2 {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(223, 88, 34);
+}
+
+.bannerleft_cart--item2--icon {
+    width: 10%;
+    padding: 12px;
+}
+
+.bannerleft_cart--item2--amt_itm {
+    padding: 12px;
+}
+
+.bannerleft_cart--item2--amt {
+    color: white;
+}
+
+.bannereft_cart--item2--ext_edt {
+    padding: 12px;
+}
+
+.bannerleft_cart--item2_exit {
+    margin-left: 11px;
+    color: yellow;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bannerleft_cart--item2--edit {
+    color: black;
+}
+
+.bannerleft_cart--item3 {
+    display: flex;
+    color: white;
+}
+
+.bannerleft_cart--item3_view {
+    width: 50%;
+    padding: 5px;
+    background: rgb(163, 53, 9);
+    font-size: 14px;
+    text-align: center;
+}
+
+.bannerleft_cart--item3_chkout {
+    text-decoration: none;
+    width: 50%;
+    padding: 5px;
+    background: rgb(196, 84, 40);
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 85%;
+    background: #f1f1f1;
+}
+
+.fa-search {
+    border: black;
+    float: left;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+/*.fa-search:hover {
+    background: #6d7f8f;
+}
+*/
+
+.fa-search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.bannerleft_info {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background: yellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bannerleft_info--headtext {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.bannerleft_info--subtext {
+    font-style: italic;
+}
+
+.bannercenter {
+    width: 40%;
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+    margin: 15px;
+}
+
+.bannerRight {
+    text-decoration: none;
+    margin-right: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bannerRight_social {
+    display: flex;
+    justify-content: flex-end;
+    width: 86%;
+}
+
+.bannerRight_social--icon {
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.bannerRight_social--icon_top {
+    width: 2px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.bannerRight_select {
+    width: 2px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.banner_top--icons {
+    width: 25px;
+}
+
+.bannerRight_select select {
+    background: #ACEBFA;
+    border: none;
+    color: white;
+}
+
+.bannerRight_select--options {
+    width: 25px;
+}
+
+.banner_slide {
+    text-decoration: none;
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 50px 0px 14px 0px;
+}
+
+.banner_slide--ImgImgcontent {
+    padding-top: 16px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.banner_slide--Img {
+    margin-top: 25px;
+    display: flex;
+    /* display: none;*/
+}
+
+.banner_slide--navImg {
+    width: 43%;
+    margin-left: 10px;
+}
+
+.banner_slide--navImg1 {
+    width: 30px;
+    height: 30%;
+    margin-top: 115px;
+    background: white;
+    transition: 0.6s ease;
+    border-radius: 4px 0px 0px 4px;
+    user-select: none;
+}
+
+.banner_slide--navImg2 {
+    width: 30px;
+    height: 30%;
+    margin-top: 50px;
+    background: yellow;
+    transition: 0.6s ease;
+    border-radius: 0px 4px 4px 0px;
+    user-select: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.banner_slide--navImg2 :hover,
+.banner_slide--navImg1 :hover {
+    background-color: #67c8da;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text */
+
+.numbertext {
+    font-size: 16px;
+    padding: 0px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The rectangle/bullets/indicators */
+
+.slide_indicator {
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle {
+    cursor: pointer;
+    height: 4px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: yellow;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.rectangle:hover {
+    background-color: red;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.btn_nav {
+    background-color: yellow;
+    border-radius: 2px;
+    border: 1px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Trebuchet MS;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 15px 12px;
+    margin-top: 50px;
+    text-decoration: none;
+    width: 134px;
+}
+
+ul.manu_product {
+    position: relative;
+    margin-left: 150px;
+    margin-right: 150px;
+    background: #F8F8F8;
+    list-style-type: none;
+    display: flex;
+    z-index: 10;
+    bottom: 20px;
+}
+
+.menu {
+    font-size: 20px;
+    width: 40%;
+    text-decoration: none;
+}
+
+.menu_text {
+    color: white;
+    background: black;
+    padding-left: 50px;
+}
+
+ul.menu_item {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+    background: #21D3FC;
+    line-height: 1.1rem;
+}
+
+.menu_item li a {
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    display: block;
+}
+
+.menu_item li a:hover {
+    color: white;
+    background: black;
+}
+
+.menu_item--1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    background: rgb(207, 203, 203);
+    margin-top: 30px;
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.menu_item--tag {
+    background: white;
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.Kitesurf,
+.super,
+.men,
+.women,
+.apparel,
+.theme,
+.equipement,
+.duper,
+.best,
+.accessories {
+    background: rgb(207, 203, 203);
+    border-radius: 2px;
+    border: 1px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 12px;
+    /* margin-right: 10px; */
+    text-decoration: none;
+    margin: 5px;
+}
+
+.Kitesurf:hover,
+.super:hover,
+.men:hover .women:hover,
+.apparel:hover,
+.theme:hover,
+.equipement:hover,
+.duper:hover,
+.best:hover,
+.accessories:hover {
+    background: yellow;
+}
+
+.menu_item--tagtext {
+    font-size: 33px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu_item--tags--subtext {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.menu_item--tagimg {
+    width: 32px;
+    margin-left: 10px;
+}
+
+.menu_item--articles {
+    line-height: 2rem;
+    background: white;
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.menu_item--articles--subtext {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a {
+    color: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+ul.newproducts {
+    list-style-type: none;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.newproducts_header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px;
+    font-size: 31px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newproducts_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newproducts_items {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+}
+
+.newproducts_items--1,
+.newproducts_items--2 {
+    position: relative;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+}
+
+.newproducts_items--1::before {
+    content: 'NEW';
+    color: white;
+    font-size: 9px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1200;
+    right: 29px;
+    top: 6px;
+}
+
+.newproducts_items--1::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid red;
+    border-left: 50px solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.newproducts_items--2::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid yellow;
+    border-left: 50px solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.newproducts_items--2::before {
+    content: 'HOT';
+    font-size: 9px;
+    font-weight: bold;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1200;
+    right: 29px;
+    top: 6px;
+}
+
+.newproducts_items--pholder {
+    width: 100%;
+    padding: 8px;
+    background: white;
+}
+
+.newproducts_items--price {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    word-wrap: break-word;
+    justify-content: space-between;
+}
+
+.product {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 16px;
+}
+
+.newproducts_arrows {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newproducts_arrows--Img {
+    width: 37px;
+    padding: 7px;
+}
+
+.newproducts_items--pholdImg {
+    width: 100%;
+}
+
+.newproducts_header2 {
+    margin-top: 30px;
+    margin-bottom: 00px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px;
+    font-size: 31px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newproducts_header3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px;
+    font-size: 31px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newproducts_content--brand {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.newproducts_content--branditem {
+    width: 40%;
+    text-align: center;
+    font-weight: 900;
+    margin: 5px;
+    padding-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.surfhouse {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.instagram_feed {
+    width: 40%;
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
