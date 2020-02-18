@@ -8,16 +8,14 @@ Footer color - #343434
 Font size - 14px */
 
 /* fix the map */
-
-html {
-  width: 100%;
-  margin: 0;
+*, *::before, *::after {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+
 body {
-    max-width: 1320px;
-    height: 100%;
     line-height: 1.42;
     font-size: 14px;
     font-family: 'Roboto', 'Raleway', Arial, Helvetica, Sans-serif;
@@ -50,10 +48,6 @@ a {
     text-decoration: none;
   }
   
-p {
-    padding: 0;
-    margin: 0;
-  }
   
 table {
     border-collapse: collapse;
@@ -68,11 +62,6 @@ button {
   font-family: inherit;
 }
   
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-  }
 
 
 h4 {
@@ -84,9 +73,6 @@ h5 {
   font-size: 20px;
 }
 
-.all-container{
-  margin: 0 auto;
-}
 
 .hero {
     height: 20rem;
@@ -132,9 +118,11 @@ h5 {
 }
 
 .container {
+  margin: 0 auto;
+  max-width: 1320px;
   padding: 0 10%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .column {
@@ -190,7 +178,7 @@ label {
   }
   
 input {
-    width: 85%;
+    width: 100%;
     margin: .3rem 0 1rem 0;
   }
   
@@ -377,6 +365,8 @@ ul.menu_item {
 
 .social__section-container {
   padding: 0 10%;
+  width: 1320px;
+  margin: 0 auto;
 }
 
 .social__section {
@@ -430,7 +420,7 @@ ul.menu_item {
 }
 
 .newsletter input {
-  margin: 10px -10px 10px 10px;
+  width: 75%;
   border: none;
   padding: 5px 10px;
   background-color: yellow;
@@ -439,6 +429,7 @@ ul.menu_item {
 
 
 .newsletter button {
+  width: 23%;
   margin: 10px 10px 10px -10px;
   border: none;
   padding: 5px 10px;
