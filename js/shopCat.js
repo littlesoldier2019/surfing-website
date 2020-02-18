@@ -40,8 +40,8 @@ const buildBlocks = (blocks) => {
         }
     }
 
-
 }
+
 buildBlocks(blocks)
 console.log(buildBlocks(blocks))
 

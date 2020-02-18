@@ -380,6 +380,7 @@ input[type=text] {
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }
@@ -389,6 +390,7 @@ input[type=text] {
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }

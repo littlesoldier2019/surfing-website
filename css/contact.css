@@ -1,4 +1,3 @@
-
 /*Fonts: Roboto, Raleway
 Width Container - 1320px
 Body color - #F8F8F8
@@ -8,51 +7,46 @@ Footer color - #343434
 Font size - 14px */
 
 /* fix the map */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
 body {
-    line-height: 1.42;
-    font-size: 14px;
-    font-family: 'Roboto', 'Raleway', Arial, Helvetica, Sans-serif;
-    /* to smooth fonts */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #F8F8F8;
-  }
+  line-height: 1.42;
+  font-size: 14px;
+  font-family: 'Roboto', 'Raleway', Arial, Helvetica, Sans-serif;
+  /* to smooth fonts */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F8F8F8;
+}
 
-ul {
-    padding: 0;
-    margin: 0;
-  }
-  
 ul li {
-    list-style: none;
-  }
-  
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    font-weight: normal;
-  }
-  
+  font-weight: normal;
+}
+
 a {
-    text-decoration: none;
-  }
-  
-  
+  text-decoration: none;
+}
+
+
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 button {
   display: inline-block;
@@ -61,7 +55,7 @@ button {
   vertical-align: middle;
   font-family: inherit;
 }
-  
+
 
 
 h4 {
@@ -75,26 +69,25 @@ h5 {
 
 
 .hero {
-    height: 20rem;
-    padding: 3% 15% 0 15%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
+  height: 20rem;
+  padding: 3% 15% 0 15%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 #map {
   width: 100%;
   height: 20rem;
   background-color: grey;
-  z-index: -1;
+
 }
 
-.hero__social-icon > i {
+.hero__social-icon>i {
   font-size: 20px;
   vertical-align: middle;
   color: white;
   margin: .1rem;
-  z-index: 3;
 }
 
 .hero__social-icon {
@@ -104,7 +97,7 @@ h5 {
   background-color: grey;
   opacity: 0.8;
   padding: 5px;
-  z-index: 2;
+
 }
 
 
@@ -146,10 +139,10 @@ h5 {
   margin: 0 5px;
 }
 
-.navigation > div {
+.navigation>div {
   display: flex;
   justify-content: flex-start;
-  
+
 }
 
 .main__body {
@@ -159,7 +152,7 @@ h5 {
 
 .contact-form {
   width: 60%;
-  padding: 2.3rem 1.5rem 0 0.5rem ;
+  padding: 2.3rem 1.5rem 0 0.5rem;
 }
 
 .contact-form::after {
@@ -175,17 +168,17 @@ h5 {
 .contact-form label {
   font-weight: bold;
   text-transform: uppercase;
-  }
-  
+}
+
 .contact-form input {
-    width: 100%;
-    margin: .4rem 0 1.2rem 0;
-  }
-  
+  width: 100%;
+  margin: .4rem 0 1.2rem 0;
+}
+
 .contact-form textarea {
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+
 .contact-form button {
   border-radius: 3px;
   background-color: lightgrey;
@@ -196,7 +189,8 @@ h5 {
 
 .contact-form button:hover {
   background-color: grey;
-  cursor: pointer;;
+  cursor: pointer;
+  ;
 }
 
 .contact-form button:active {
@@ -394,7 +388,7 @@ ul.menu_item {
 .social__section-fb {
   background-color: #3b5998;
   align-items: center;
-  justify-items: center; 
+  justify-items: center;
 }
 
 .social__section-tt {
