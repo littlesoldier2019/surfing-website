@@ -141,6 +141,14 @@ body {
   .cart__content {
     flex-wrap: wrap;
   }
+  .container__left {
+    display: none;
+  }
+
+  .container__right {
+    width: 100%;
+  }
+
   .delivery-form {
     flex-wrap: wrap;
   }
