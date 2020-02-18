@@ -1,13 +1,14 @@
 @import "reset";
 @import "variables";
 @import "mixins";
-@import "_header";
-@import "_sidebar";
+@import "_sidebar-header";
 @import "_nav";
 @import "_item";
 @import "_modal";
 @import "_moreInfo";
-@import "suggestion-viewed";
+@import "_suggestion-viewed";
+
+@import "_footer";
 
 body {
   background-color: #F8F8F8;
@@ -36,8 +37,12 @@ body {
 .content-wrapper {
   border: 2px solid salmon;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  // justify-content: center;
+  // flex-wrap: wrap;
+}
+
+.sidebar {
+  width: 20%;
 }
 
 .main {
@@ -45,7 +50,7 @@ body {
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
 }
 
 /* ITEM SECTION LAYOUT */
