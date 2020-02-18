@@ -10,26 +10,33 @@ let blocks = ''
 // create blocks for main display grid
 const buildBlocks = (blocks) => {
     let i = blocks
-    for (i = 0; i < 12; i++) {
+    for (i = 0; i <= 8; i++) {
         displayBlock = document.createElement('div')
         blockImage = document.createElement('IMG')
         blockText = document.createElement('div')
-        blockTextUp = document.createElement('p')
-        blockTextDown = document.createElement('p')
+        blockTextUp = document.createElement('span')
+        blockTextDown1 = document.createElement('span')
+        blockTextDown2 = document.createElement('div')
         displayBlock.className = 'display__block'
         blockImage.setAttribute('src', 'https://via.placeholder.com/200x200/#E5EAEB')
         blockText.className = 'block__text'
+        blockText.style.fontSize = '10px'
+        blockTextDown1.style.fontSize = '14px';
         blockTextUp.textContent = 'sleeve spring suite'
-        blockTextDown.textContent = '€864.00'
+        blockTextDown1.textContent = '€864.00'
+        blockTextDown2.textContent = '€1,270.15'
+        blockTextDown2.className = 'display__text--down2'
 
         displayBlock.appendChild(blockImage)
         displayBlock.appendChild(blockText)
+        displayBlock.appendChild(blockTextDown2)
         blockText.appendChild(blockTextUp)
-        blockText.appendChild(blockTextDown)
+        blockText.appendChild(blockTextDown1)
+        // blockText.appendChild(blockTextDown2)
         gridDisplay.appendChild(displayBlock)
         console.log(blocks[2])
         for (j = 0; j < 2; j++) {
-            blockTextDown.style.color = 'red'
+            blockTextDown2.style.color = 'red'
         }
     }
 
@@ -48,8 +55,8 @@ let apparelTags = ['Apparel', 'Super', 'Duper', 'Theme', 'Responsive', 'Men', 'W
 content = ''
 const makeSurfWidgets = () => {
     kitesurfTags.forEach(tag => {
-        const diidiv = document.querySelector('.widget__items')
-        diidiv.innerHTML += `<div class='kitesurfTags'>
+        const widgetDiv = document.querySelector('.widget__items')
+        widgetDiv.innerHTML += `<div class='kitesurfTags'>
                                 ${tag}
                                 </div>`
     });
@@ -60,8 +67,8 @@ makeSurfWidgets()
 
 const makeApparelWidgets = () => {
     apparelTags.forEach(tag => {
-        const diidiv = document.querySelector('.widget__items')
-        diidiv.innerHTML += `<div class='apparelTags'>
+        const widgetDiv = document.querySelector('.widget__items')
+        widgetDiv.innerHTML += `<div class='apparelTags'>
                                 ${tag}
                                 </div>`
     });
@@ -69,18 +76,18 @@ const makeApparelWidgets = () => {
 }
 makeApparelWidgets()
 
-let first = document.querySelector('.widget__items > .apparelTags');
-first.style.backgroundColor = 'yellow'
-first.style.padding = '10px 40px'
-first.style.fontSize = '16px'
-first.style.fontWeight = 'bold'
+// let first = document.querySelector('.widget__items > .apparelTags');
+// first.style.backgroundColor = 'yellow'
+// first.style.padding = '10px 40px'
+// first.style.fontSize = '16px'
+// first.style.fontWeight = 'bold'
 
 
 
 
 
 // innerHTML version
-/* 
+/*
 let blocks = ''
 
 const buildBlocks = () => {
