@@ -165,8 +165,8 @@ h5 {
 .contact-form::after {
   content: "";
   position: absolute;
-  top: 75%;
-  right: 32%;
+  top: 100%;
+  right: 33%;
   height: 20rem;
   width: 1px;
   background-color: lightgrey;
@@ -179,7 +179,7 @@ h5 {
   
 .contact-form input {
     width: 100%;
-    margin: .3rem 0 1rem 0;
+    margin: .4rem 0 1.2rem 0;
   }
   
 .contact-form textarea {
@@ -360,7 +360,7 @@ ul.menu_item {
   display: grid;
   width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 8rem 18rem 2rem;
+  grid-template-rows: 6rem 18rem 2rem;
 }
 
 .social__section-container {
@@ -414,13 +414,17 @@ ul.menu_item {
   display: grid;
   width: 100%;
   padding: 3rem 1rem;
-  grid-template-columns: 14% 14% 14% 29% 29%;
+  grid-template-columns: 14% 14% 14% 25% 25%;
   grid-template-rows: 100%;
   color: white;
 }
 
+.info__section div {
+  padding-left: 1rem;
+}
+
 .newsletter input {
-  width: 75%;
+  width: 70%;
   border: none;
   padding: 5px 10px;
   background-color: yellow;
@@ -429,7 +433,7 @@ ul.menu_item {
 
 
 .newsletter button {
-  width: 23%;
+  width: 27%;
   margin: 10px 10px 10px -10px;
   border: none;
   padding: 5px 10px;
