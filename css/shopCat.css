@@ -22,13 +22,12 @@ body {
     background-color: #f8f8f8;
 }
 
-/************ shop-cat-header ***************/
+/* *********** shop-cat-header ************** */
 .header__wrapper {
     background-color: #ACEBFA;
 }
 
 .container {
-    width: 2000px;
     margin: 0 auto;
 }
 
@@ -180,7 +179,7 @@ input[type=text] {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 89%;
+    width: 85%;
     background: #f1f1f1;
 }
 
@@ -462,9 +461,11 @@ select {
 }
 
 .grid__display {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px auto;
+    margin: 10px 0;
+    justify-content: space-between;
 }
 
 .display__block {
